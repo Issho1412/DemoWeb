@@ -1,0 +1,679 @@
+@media only screen  and (max-width: 599px) and (min-width: 480px) {
+  	header > div:nth-child(2)
+	{
+		width: 50%;
+		font-size: 10px;
+		margin-top: 1.5%;
+	}
+	header > div:last-child
+	{
+		width: 15%;
+		margin-right: 5%;
+	}
+	header > div.first-child
+	{
+		height: auto;
+		width: 15%;
+		margin-left: 4%;
+		margin-right: 8%;
+		margin-top: 1%;
+	}
+	.img-title
+	{
+		width: 100px;	
+	}
+	header button
+	{
+		
+		width: 70px;
+		font-size: 6px;
+		border-radius: 2px;
+	}
+	header button
+	{
+		padding: 0;
+	}
+	.flex-bar-top-rights{
+		float: right;
+		width: 70%;
+		height: auto;
+		margin-top: -6.5%;
+		margin-right: 2%;
+	}
+	
+	.flex-bar-top-left
+	{
+		float: left;
+		width: 70%;
+		margin-top: 20px;
+	}
+	.shows i{
+		width: 25px; 
+		height: 25px;
+		text-align: center;
+	/*	border:1px solid black;*/
+		line-height: 25px;
+		font-size: 7px;
+		border-radius: 50%;
+	}
+	/*----------------------------------------------*/
+	/*------------------------ CSS for mega menu nag---------------------------*/
+	
+	.area-bar
+	{
+		background-color: #03a9f4;
+		height: 80px;
+		width: 100%;
+		color: white;
+		position: sticky;
+		z-index: 100;
+		top: 0;
+	}
+	.area-bar-top
+	{
+		position: absolute;
+		left: 1%;
+		width: 90%;
+	}
+	.bar-top-icon
+	{
+		float: left;
+		height: 20px;
+	}
+	.bar-top-content
+	{
+		font-size: 16px;
+		padding-top: 1%;
+	}
+	.flex-bar-top-left
+	{
+		float: left;
+		width: 50%;
+		margin-top: 4%;
+		margin-left: 5%;
+	}
+	/* --------------------- CSS for nagbar real -----------------------------*/
+	/*------------------------------------------------------------------------*/
+	.menu-wrapper
+	{
+		font-family: Arial;
+		font-size: 8px;
+		position: absolute;
+		top:60%;
+		left: 7%;
+		
+	}
+	.nav > li > a 
+	{
+		position: relative;
+		display: block;
+	 	z-index: 510;
+		height: 30px;
+		padding: 0 5px;
+	 	line-height: 30px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 10px;
+		color: #fcfcfc;
+		text-shadow: 0 0 1px rgba(0,0,0,.35);
+		background: #03a9f4;
+	}
+	.nav > li > div 
+	{
+		position: absolute;
+		display: block;
+		width: 115%;
+		top: 90%;
+		left: 0;
+	 	opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		background: #ffffff;
+		border-radius: 0 0 3px 3px;
+	}
+	.hassub a
+	{
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 7px;
+	}
+	.nav .nav-column h3 
+	{
+		margin: 20px 0 5px 0;
+		line-height: 10px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 7px;
+		text-transform: uppercase;
+	}
+	.nav .nav-column li a {
+		display: block;
+		line-height: 15px;	
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 7px;
+
+		color: #888888;
+	}
+	.dropdown li 
+	{
+		background-color: white;
+		line-height:20px;
+		width: 120%;
+		padding: 0 0 0 5px;
+	}
+
+	/*----------------Item 1 -----------------*/	
+	/*----------------------------------------*/
+	.transbox
+	{
+		margin: 3% 0;
+	  	background-color: rgba(0,0,0,.4);
+	  	border: 1px solid black;
+	  	opacity: 0.6;
+	  	height: auto;
+	  	padding-left: 3%;
+	  	text-align: left;
+	  	width: 55%;
+	}
+	.transbox p
+	{
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 10px;
+	  	color: white;
+	}
+	.flex-item1-bottom-text > div
+	{
+		margin-left: 5%;
+		margin-bottom: 0;
+		color: white;
+		height: 30px;
+		flex-wrap:wrap;
+		font-size: 13px;
+		
+	}
+	.item-art-bottom-right
+	{
+		float: left;
+		width: 45%;
+	}
+	.flex-item1-bottom-text  > p
+	{
+		margin-left: 3%;
+		color: white;
+		flex-wrap:nowrap;
+		font-size: 9.5px;
+		
+	}
+	.flex-item1-bottom-icon > div
+	{
+		margin: 40% 20% 50% 0;
+		width: 20px;
+		height: 20px;
+	  	line-height: 20px;
+	 	font-size: 13px;
+	 	border-radius: 50%;
+	 	text-align: center;
+	}
+	.item1-art-last > button
+	{
+		margin: 0 2px 10px;
+	}
+	.item1-art-last > div:nth-child(1) > button
+	{
+		border-radius: 50%;
+		height: auto;
+		width: auto;
+		text-align: center;
+	}
+	.item1-art-last > div:nth-child(1) i
+	{
+		font-size: 8px;
+		
+	}
+	.item1-art-last > div:nth-child(3) > button
+	{
+		width: 100px;
+		margin:  0 1%;
+		height: 25px;
+		text-align: center;
+		font-size: 9px;
+	}
+	.btn-group-var
+	{
+		width: 1px;
+	}
+	.common1
+	{
+		font-size: 9px;
+		width: 80px;
+		height: 20px;
+		border: none;
+	}
+	/*--Item 2 ----------------------------------*/
+	/*-------------------------------------------*/
+	.title-item2
+	{
+		font-size: 16px;
+		
+	}
+	.title-item2 + p
+	{
+		font-size: 0.6rem;
+		padding: 0 13%;
+	}
+	/*----Item 3 --------------------------------*/
+	/*-------------------------------------------*/
+	.item3 
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.item3 > div
+	{
+		padding: 3% 10%;
+		height: auto;
+		width: 90%;
+		margin: 0 5%;
+	  	text-align: center;
+	  	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	  
+	}
+	.btn-item3-icon
+	{
+		margin-left: 36%;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		padding-top: 5%;
+		margin-bottom: 0.5%;
+		padding-left: 10%;
+	}
+	.btn-set-item3
+	{
+		height:50px; 
+		width: 50px;
+		border-radius: 50%; 
+		border:none;
+	}
+	/*----Item 4 --------------------------------*/
+	/*-------------------------------------------*/
+	.title-item4
+	{
+		color: white;
+		text-align: center;
+		font-size: 15px;	
+	}
+	.group-btn-item4
+	{
+		text-align: left;
+	}
+
+	.item4-cnt-left
+	{
+		float: left;
+		width: 50%;
+		padding-left: 5%;
+		color: white;
+		font-size: 8px;
+	}
+	.group-btn-item4 > button
+	{
+		height: 20px;
+		font-size: 8px;
+		margin-top: 5%;
+	}
+	.img-item4
+	{
+		position: absolute;
+		right: 1%;
+		width: 46%;
+		margin-top: 1%;
+		max-width: 100%;
+	}
+	/*-----------------ITEM5-------------*/
+	.title-item5
+	{
+		font-size: 20px;
+	}
+	.cnt-item5
+	{
+		font-size: 15px;
+	}
+	/*------ITEM6 -----------------------------*/
+	.item6 > a
+	{
+		text-decoration: none;
+		padding-top: 5px;
+		text-align: center;
+		width: 17%;
+		height: 20px;
+		color: gray;
+		font-size: 7px;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	}
+	/*----- ITEM 7 -------------------------*/
+	.item7-cnt-left
+	{
+		padding-left: 7%;
+		width: 50%;
+		font-size: 8px;
+		float: left;
+	}
+	.item7-cnt-right
+	{
+		float: left;
+		width: 50%;
+	}
+	.img-item7
+	{
+		width: 45%;
+		margin-top: 0%;
+		margin-left: 2%;
+	}
+	/*----------- ITEM 8 -------------------*/
+	.item8-content
+	{
+		font-size: 1.2rem;
+		color: #757575;
+	}
+	/*----------ITEM 9 ----------------------*/
+	.item9
+	{
+		width: 90%;
+		display: flex;
+		align-items: baseline;
+		flex-direction: row;
+		margin: 0 6.5%;
+		}
+	.item9 > div
+	{
+		height: auto;
+		width: 32%;
+		margin: 5px 0 0 ;
+		text-align: center;
+	}
+	.item9  p
+	{
+		color:white;
+		margin: 0;
+	}
+	p.mid-pro
+	{
+		padding: 10px 0;
+	}
+	.header-item9
+	{
+		height: 30px;
+		opacity: 0.5;
+		padding: 10px 0;
+		font-size: 8px;
+		background-color: rgba(0,0,0,.4);
+	}
+	.cnt-header-item9
+	{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	/*-----------------Header item9-----------------*//*---------------------------------*/
+	/*----------------------------------------------*//*---------------------------------*/
+	/*----------------------------------------------*//*---------------------------------*/
+	.item9-dolar
+	{
+		font-size: 13px;
+		font-weight: bold;
+	}
+	
+	/*------- Hover item9 ----------*//*---------------------------------*/
+	/*------------------------------*//*---------------------------------*/
+	/*------------------------------*//*---------------------------------*/
+	.flex-item9 > div
+	{
+		text-align: left;
+	}
+	.flex-item9 > div > span
+	{
+		padding-left: 1%;
+	}
+	.flex-item9 > div > i
+	{
+		font-size: 6px;
+	}
+	
+	.flex-item9-cnt
+	{
+		font-size: 8px;
+		word-wrap: break-word;
+		padding: 0;
+	}
+	
+	.btn-item9
+	{
+		margin-left: 25%;
+		border:none;
+		padding: 5px 15px;
+		font-size: 7px;
+	}
+	/*----------ITEM !O ---------------*/
+	.content-item10
+	{
+		padding-bottom: 1rem;
+		text-align: left;
+		font-size: 8px;
+		font-style: italic;
+	}
+	.img-item10
+	{
+		position: absolute;
+		left: -12%;
+		top: -10%;
+		height: 35px;
+		width: 35px;
+		box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+		border-radius: 50%;
+	}
+	.content-item10-bottom
+	{
+		float: right;
+		font-size: 8px;
+		padding-bottom: 20px;
+	}
+	.item10-row > div.row-left10
+	{
+		float: left;
+		line-height: 20px;
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		border-radius: 50%;
+		text-align: center;
+		margin-left: 16%;
+		margin-right: 16%;
+	}
+	.flex-item10 > div
+	{
+		width: 27%;
+		height: auto;
+		background-color: white;
+		margin: 2%;
+		color: gray;
+		position: relative;
+		padding-left: 5%;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	}
+	.item10-row > div.row-md10
+	{
+		float: left;
+		width: 30%;
+		text-align: center;
+		margin-left: 7%;
+		margin-top: 2%;
+
+	}
+	.item10-row > div.row-right10
+	{
+		float: right;
+		height: 20px;
+		width: 20px;
+		line-height: 20px;
+		text-align: center;
+		background-color: white;
+		border-radius: 50%;
+		margin-right: 16%;
+	}
+	ul.ul-item10 li
+	{
+		float: left;
+		width: 8px;
+	    height: 8px;
+	    display: inline-block;
+	    background-color: transparent;
+	    border: solid 2px #fff;
+	    border-radius: 50%;
+	    margin:  0 5px;
+	}
+
+	/*----------------- Item11  -------------------*/
+	.title-item11
+	{
+		font-size: 15px;
+	}
+	.flex-item11-cnt > div > p
+	{
+		margin-left: 3%;
+		font-size: 12px;
+	}
+	.flex-item11-cnt
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.flex-item11-cnt button
+	{
+		font-size: 8px;
+		height: auto;
+		padding: 2% 5%;
+	}
+	.flex-item11-cnt > div
+	{
+		height: 30%;
+		width: 90%;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+		margin: 0.5% 5%;
+		padding-bottom: 3%;
+	}
+	/*-------------------Item12 ----------------------*/
+	.item12 > div
+	{	
+	  	color: white;
+	  	padding-left: 2%;
+	  	height: 270px;
+	}
+
+	.item12-con-right > span
+	{
+		font-size: 8px;
+	}
+	
+	#item12-left
+	{
+		float: left;
+		width: 35%;
+		padding-left: 2%;
+		background-color: rgb(96, 125, 139);
+	}
+	#item12-left  > p:nth-child(4)
+	{
+		padding: 0 10px 0 0;
+		font-size: 10px;
+	}
+	.title-left-item12
+	{
+		
+		text-align: left;
+		font-size: 12px;
+	}
+	.title-right-item12
+	{
+		text-align: right;
+		font-size: 12px;
+
+	}
+	#item12-right > div > a
+	{
+		background-color: #455a64;
+		color: white;
+		margin: 2% 2% 5% 2%;
+		height: 20px;
+		width: 20px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.item12-con-right > div span
+	{
+		font-size: 7px;
+	}
+	.item12-con-left > img
+	{
+		height: 30px;
+		width: 30px;
+	}
+	.item12-con-right
+	{
+		padding: 0 0.5px;
+	}
+	.cnt-item12
+	{
+		font-size: 7px;
+	}
+	.item12-con-right > div span
+	{
+		font-size: 7px;
+	}
+	.container-item12
+	{
+		padding-bottom: 10%;
+	}
+	.btn-set-item12
+	{
+		border: none;
+		border-radius: 50px;
+		width: 90%;
+		color: white;
+		padding: 2%;
+		margin: 1% 0;
+		background-color: rgba(0,0,0,.2);
+		font-size: 7px;
+	}
+	.icon-child  i 
+	{
+		font-size: 8px;
+	}
+	.icon-child span
+	{
+		font-size: 8px;
+	}
+	.email
+	{
+		font-size: 10px;
+	}
+	address span
+	{
+		font-size: 7px;
+	}
+	address p
+	{
+		margin: 0;
+	}
+	.item12-icon
+	{
+		margin-top: 5%;
+	}
+	.item12-icon i
+	{
+		font-size: 8px;
+	}
+} 
+

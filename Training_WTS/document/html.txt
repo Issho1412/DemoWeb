@@ -1,0 +1,40 @@
+Trang web tìm font thích h?p cho website
+	https://fonts.google.com/?subset=vietnamese
+Th? html5 thay th?
+{
+	
+<article>	Ð?nh nghia m?t bài vi?t trong tài li?u
+<aside>	Ð?nh nghia m?t bên n?i dung trong n?i dung trang
+<bdi>	Cô l?p m?t ph?n van b?n có th? du?c d?nh d?ng khác v?i các van b?n khác
+<details>	Ð?nh nghia các chi ti?t thêm d? ngu?i dùng có th? xem ho?c ?n di
+<dialog>	Ð?nh nghia m?t h?p tho?i ho?c c?a s?
+<figcaption>	Ð?nh nghia m?t nhãn cho ph?n t? <figure>
+<figure>	Ð?nh nghia n?i dung t? ch?a
+<footer>	Ð?nh nghia m?t ph?n chân (footer) cho tài li?u ho?c 1 ph?n n?i dung nào dó
+<header>	Ð?nh nghia m?t ph?n d?u (header) cho tài li?u ho?c 1 ph?n n?i dung nào dó
+<main>	Ð?nh nghia n?i dung chính c?a tài li?u
+<mark>	Ð?nh nghia van b?n du?c dánh d?u/tô sáng
+<menuitem> 	Ð?nh nghia m?t ph?n t? menu/command mà ngu?i dùng có th? ch?n t? m?t popup menu (menu b?t lên)
+<meter>	Ð?nh nghia m?t don v? do lu?ng trong kho?ng bi?t tru?c
+<nav>	Ð?nh nghia các liên k?t d?u hu?ng
+<progress>	Th? hi?n ti?n trình c?a 1 tác v?
+<rp>	Ð?nh nghia cái gì c?n hi?n th? trong trình duy?t mà không h? tr? các chú thích ruby
+<rt>	Ð?nh nghia m?t gi?i thích/phát âm c?a các ký t? (dành cho ki?u ch? Ðông Á)
+<ruby>	Ð?nh nghia m?t chú thích ruby (dành cho ki?u ch? Ðông Á)
+<section>	Ð?nh nghia m?t ph?n trong 1 tài li?u
+<summary>	Ð?nh nghia ph?n d?u có th? nhìn th?y cho m?t ph?n t? 	<details>
+	<time>	Ð?nh nghia m?t ngày/gi?
+	<wbr>	Ð?nh nghia m?t ngan cách dòng
+}
+
+
+//-----------------------------------------------
+Trong ph?n section này mình mu?n hi?n th? m?t m?u tin t?c nên mình dã t?o m?t article và trong article có header ch?a tiêu d?, m?t th? p ch?a n?i dung và m?t th? footer ch?a thông tin tác gi? và ngày dang c?a tin t?c. Trong header mình có 2 th? h1 và h2 nên mình có dùng m?t th? hgroup d? bao quanh l?i, n?u b?n ch? s? d?ng m?t th? h1 thôi thì không c?n dùng thêm th? hgroup.
+T?t c? nh?ng th? article, hgroup, header, footer, section, aside là nh?ng th? HTMl5, nh?ng th? còn l?i là th? HTML thông thu?ng.
+
+------------------------------------
+ th? header và footer không ph?i ch? d? dùng cho ph?n layout chính mà b?n có th? dùng cho bên trong th? article. Trong header ta có th? html5 hgroup d? gop ph?n header l?i, và duong nhiên vi?c s? d?ng th? này là không b?t bu?c, t?c là thay vì dùng th? header trong article thì b?n có th? dùng th? div hay th? thông thu?ng kh
+
+--------------------------
+T?i sao ph?i dùng ph?n t? semantic?
+Trong HTML4, các nhà phát tri?n web s? d?ng thu?c tính id/class d? d?nh nghia các vùng: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav, … Tuy nhiên, di?u này làm các co ch? tìm ki?m (Google) không th? nh?n di?n du?c n?i dung và c?u trúc trang d? dàng. Do dó, HTML5 ra d?i và ch?a các ph?n t? ng? nghia giúp gi?i quy?t v?n d? này. Theo W3C, m?t web ng? nghia: “cho phép d? li?u du?c chia s? và tái s? d?ng ? nhi?u ?ng d?ng, doang nghi?p và c?ng d?ng”.

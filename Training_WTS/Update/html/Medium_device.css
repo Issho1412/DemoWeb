@@ -1,0 +1,624 @@
+@media only screen  and (max-width: 995px) and (min-width: 768px) {
+  	header > div:nth-child(2)
+	{
+		width: 55%;
+		font-size: 20px;
+		margin-top: 1.5%;
+	}
+	header > div:last-child
+	{
+		width: 20%;
+		padding-bottom: 0.5%;
+	}
+
+	header button
+	{
+		margin-top: 5px;
+		width: auto;
+		font-size: 11px;
+		border-radius: 2px;
+	}
+	.flex-bar-top-rights{
+		float: right;
+		width: 70%;
+		height: auto;
+		margin-top: -5%;
+	}
+	.bar-top-content
+	{
+		font-size: 30px;
+		position: absolute;
+		top: 30%;
+	}
+	.flex-bar-top-left
+	{
+		float: left;
+		width: 70%;
+		margin-top: 20px;
+	}
+	.shows i{
+		width: 40px; 
+		height: 40px;
+		text-align: center;
+	/*	border:1px solid black;*/
+		line-height: 40px;
+		border-radius: 50%;
+	}
+	/*----------------------------------------------*/
+	/*------------------------ CSS for mega menu nag---------------------------*/
+	
+	.area-bar
+	{
+		background-color: #03a9f4;
+		height: 150px;
+		width: 100%;
+		color: white;
+		position: sticky;
+		z-index: 100;
+		top: 0;
+	}
+	.area-bar-top
+	{
+		position: absolute;
+		left: 5%;
+		width: 90%;
+	}
+	.bar-top-icon
+	{
+		float: left;
+	}
+	.bar-top-content
+	{
+		font-size: 40px;
+
+	}
+	.flex-bar-top-left
+	{
+		float: left;
+		width: 50%;
+		margin-top: 25px;
+	}
+	/* --------------------- CSS for nagbar real -----------------------------*/
+	/*------------------------------------------------------------------------*/
+	.menu-wrapper
+	{
+		font-family: Arial;
+		font-size: 15px;
+		position: absolute;
+		top:73%;
+		left: 7%;
+		
+	}
+	.nav > li > a 
+	{
+		position: relative;
+		display: block;
+	 	z-index: 510;
+		height: 40px;
+		padding: 0 10px;
+	 	line-height: 40px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 14px;
+		color: #fcfcfc;
+		text-shadow: 0 0 1px rgba(0,0,0,.35);
+		background: #03a9f4;
+	}
+	.nav > li > div 
+	{
+		position: absolute;
+		display: block;
+		width: 125%;
+		top: 100%;
+		left: 0;
+	 	opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		background: #ffffff;
+		border-radius: 0 0 3px 3px;
+	}
+	.hassub a
+	{
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 13px;
+	}
+	.nav .nav-column h3 
+	{
+		margin: 20px 0 5px 0;
+		line-height: 12px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 11.5px;
+		text-transform: uppercase;
+	}
+	.nav .nav-column li a {
+		display: block;
+		line-height: 30px;	
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 12px;
+
+		color: #888888;
+	}
+	.dropdown li 
+	{
+		background-color: white;
+		line-height:50px;
+		width: 150%;
+		padding: 0 0 0 5px;
+	}
+	/*----------------Item 1 -----------------*/	
+	/*----------------------------------------*/
+	.transbox
+	{
+		margin: 3% 0;
+	  	background-color: rgba(0,0,0,.4);
+	  	border: 1px solid black;
+	  	opacity: 0.6;
+	  	height: auto;
+	  	padding-left: 3%;
+	  	text-align: left;
+	  	width: 55%;
+	}
+	.transbox p
+	{
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 16px;
+	  	color: white;
+	}
+	.flex-item1-bottom-text > div
+	{
+		margin-left: 5%;
+		margin-bottom: 0;
+		color: white;
+		height: 50px
+		flex-wrap:wrap;
+		font-size: 20px;
+		
+	}
+	.item-art-bottom-right
+	{
+		float: left;
+		width: 45%;
+	}
+	.flex-item1-bottom-text  > p
+	{
+		margin-left: 3%;
+		color: white;
+		flex-wrap:nowrap;
+		font-size: 16px;
+		
+	}
+	.flex-item1-bottom-icon > div
+	{
+		margin: 30% 10% 30% 0;
+		width: 45px;
+		height: 45px;
+	  	line-height: 45px;
+	 	font-size: 20px;
+	 	border-radius: 50%;
+	 	text-align: center;
+	}
+	.item1-art-last > button
+	{
+		margin: 0 10px 20px;
+
+	}
+	.item1-art-last > div:nth-child(1) > button
+	{
+		border-radius: 50%;
+		height: 25px;
+		width: 25px;
+		text-align: center;
+	}
+	.common1
+	{
+		
+		width: 150px;
+		height: 30px;
+		border: none;
+	}z
+	/*--Item 2 ----------------------------------*/
+	/*-------------------------------------------*/
+	.title-item2
+	{
+		font-size: 24px;
+		
+	}
+	.title-item2 + p
+	{
+		font-size: 1.1rem;
+		padding: 0 13%;
+	}
+	/*----Item 3 --------------------------------*/
+	/*-------------------------------------------*/
+
+	.item3 
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.item3 > div
+	{
+		padding: 1% 0;
+		height: auto;
+		width: 90%;
+		margin: 0 5%;
+	  	text-align: center;
+	  	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	  
+	}
+	.btn-item3-icon
+	{
+		margin-left: 36.5%;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		padding-top: 5%;
+		margin-bottom: 0.5%;
+		padding-left: 10%;
+	}
+	.btn-set-item3
+	{
+		height:50px; 
+		width: 50px;
+		border-radius: 50%; 
+		border:none;
+	}
+	/*----Item 4 --------------------------------*/
+	/*-------------------------------------------*/
+	.title-item4
+	{
+		color: white;
+		text-align: center;
+		font-size: 25px;	
+	}
+	.group-btn-item4
+	{
+		text-align: left;
+		margin-left: 10%;
+	}
+
+	.item4-cnt-left
+	{
+		float: left;
+		width: 55%;
+		padding-left: 5%;
+		color: white;
+		font-size: 14px;
+	}
+	.group-btn-item4 > button
+	{
+		height: 30px;
+	}
+	.img-item4
+	{
+		position: absolute;
+		right: 1.5%;
+		width: 40%;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	/*-----------------ITEM5-------------*/
+	.title-item5
+	{
+		font-size: 26px;
+	}
+	.cnt-item5
+	{
+		font-size: 18px;
+	}
+	/*------ITEM6 -----------------------------*/
+	.item6 > a
+	{
+		text-decoration: none;
+		padding-top: 10px;
+		text-align: center;
+		width: 17%;
+		height: 35px;
+		color: gray;
+		font-size: 16px;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	}
+	/*----- ITEM 7 -------------------------*/
+	.item7-cnt-left
+	{
+		padding-left: 7%;
+		width: 55%;
+		font-size: 15px;
+		float: left;
+	}
+	.img-item7
+	{
+		width: 30%;
+		margin-left: 9%;
+	}
+	/*----------- ITEM 8 -------------------*/
+	.item8-content
+	{
+		font-size: 2rem;
+		font-size: 200;
+		color: #757575;
+	}
+	/*----------ITEM 9 ----------------------*/
+	.item9
+	{
+		
+		width: 90%;
+		margin: 0 0 0 10%;
+		display: flex;
+		align-items: baseline;
+		flex-direction: row;
+		}
+	.item9 > div
+	{
+		height: auto;
+		width: 31%;
+		margin: 5px 0 0;
+		text-align: center;
+	}
+	.item9  p
+	{
+		color:white;
+		margin: 0;
+	}
+	p.mid-pro
+	{
+		padding: 10px 0;
+	}
+	.header-item9
+	{
+		height: 50px;
+		opacity: 0.5;
+		padding: 10px 0;
+		font-size: 18px;
+		background-color: rgba(0,0,0,.4);
+	}
+	.cnt-header-item9
+	{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.btn-item9
+	{
+		margin-left: 20%;
+		border:none;
+		padding: 5px 15px;
+	}
+	/*-----------------Header item9-----------------*//*---------------------------------*/
+	/*----------------------------------------------*//*---------------------------------*/
+	/*----------------------------------------------*//*---------------------------------*/
+	.item9-dolar
+	{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	
+	/*------- Hover item9 ----------*//*---------------------------------*/
+	/*------------------------------*//*---------------------------------*/
+	/*------------------------------*//*---------------------------------*/
+	.flex-item9 > div
+	{
+		text-align: left;
+		padding: 0 2%;
+		margin: 10px 0px 0px;
+	}
+
+	.flex-item9 > div > span
+	{
+		padding-left: 2%;
+	}
+	.flex-item9 > div > i
+	{
+		font-size: 13px;
+	}
+	
+	.flex-item9-cnt
+	{
+		font-size: 13px;
+		word-wrap: break-word;
+		padding: 0;
+	}
+	
+
+	/*----------ITEM !O ---------------*/
+	.content-item10
+	{
+		padding-bottom: 1rem;
+		text-align: left;
+		font-size: 15px;
+		font-style: italic;
+	}
+	.img-item10
+	{
+		position: absolute;
+		left: -12%;
+		top: -16%;
+		height: 70px;
+		width: 70px;
+		box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+		border-radius: 50%;
+	}
+	.content-item10-bottom
+	{
+		float: right;
+		font-size: 13px;
+		padding-bottom: 20px;
+	}
+	.item10-row > div.row-left10
+	{
+		float: left;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		border-radius: 50%;
+		text-align: center;
+		margin-left: 16%;
+		margin-right: 16%;
+	}
+	.flex-item10 > div
+	{
+		width: 27%;
+		height: auto;
+		background-color: white;
+		margin: 2.5%;
+		color: gray;
+		position: relative;
+		padding-left: 5%;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	}
+	.item10-row > div.row-md10
+	{
+		float: left;
+		width: 30%;
+		text-align: center;
+		margin-left: 7%;
+		margin-top: 2%;
+
+	}
+	.item10-row > div.row-right10
+	{
+		float: right;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		background-color: white;
+		border-radius: 50%;
+		margin-right: 16%;
+	}
+	ul.ul-item10 li
+	{
+		float: left;
+		width: 12px;
+	    height: 12px;
+	    display: inline-block;
+	    background-color: transparent;
+	    border: solid 2px #fff;
+	    border-radius: 50%;
+	    margin:  0 5px;
+	}
+	/*----------------- Item11  -------------------*/
+	.title-item11
+	{
+		font-size: 20px;
+	}
+	.flex-item11-cnt > div > p
+	{
+		margin-left: 3%;
+		font-size: 15px;
+	}
+	.flex-item11-cnt
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.flex-item11-cnt > div
+	{
+		height: 30%;
+		width: 27%;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+		margin: 1% 0.9%;
+		padding-bottom: 3%;
+	}
+	/*-------------------Item12 ----------------------*/
+	.item12 > div
+	{	
+		
+	  	color: white;
+	  	padding-left: 2%;
+	  	height: 450px;
+	  	
+	}
+
+	.item12-con-right > span
+	{
+		font-size: 9px;
+	}
+	
+	#item12-left
+	{
+		float: left;
+		width: 35%;
+		padding-left: 1%;
+		background-color: rgb(96, 125, 139);
+	}
+	#item12-left  > p:nth-child(4)
+	{
+		padding: 0 10px 0 0;
+		font-size: 14px;
+	}
+	.title-left-item12
+	{
+		
+		text-align: left;
+		font-size: 20px;
+	}
+	.title-right-item12
+	{
+		text-align: right;
+		font-size: 20px;
+
+	}
+	#item12-right > div > a
+	{
+		background-color: #455a64;
+		color: white;
+		margin: 4%;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.item12-con-right > div span
+	{
+		font-size: 13px;
+	}
+	.item12-con-left > img
+	{
+		height: 60px;
+		width: 60px;
+	}
+	.item12-con-right
+	{
+		padding: 0 0.5px;
+	}
+	.cnt-item12
+	{
+		font-size: 11.5px;
+	}
+	.item12-con-right > div span
+	{
+		font-size: 11px;
+	}
+	.container-item12
+	{
+		padding-bottom: 10%;
+	}
+	.btn-set-item12
+	{
+		border: none;
+		border-radius: 50px;
+		width: 90%;
+		color: white;
+		padding: 4%;
+		margin: 5% 0;
+		background-color: rgba(0,0,0,.2);
+		font-size: 18px;
+	}
+	.icon-child  i 
+	{
+		font-size: 12px;
+	}
+	.icon-child span
+	{
+		font-size: 12px;
+	}
+
+} 
+

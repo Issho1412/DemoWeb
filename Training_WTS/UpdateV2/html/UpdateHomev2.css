@@ -1,0 +1,1236 @@
+*
+{
+	box-sizing: border-box;
+
+}
+html, body
+{
+	
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+/*-------------------- Class can recycle -----------------------*/
+.flex-col
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.flex-row
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+/*------------- Responsive -----------*/     
+/*For mobile phone*/
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/*-------------------btn Setting ------------------*/
+
+
+/*------------------------ CSS for Header --------------------*/
+header
+{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: #000000;
+	
+}
+header > div
+{
+	margin: 1%;
+	display: inline-block;
+}
+.img-title
+{
+	width: 100%;
+	max-width: 400px;
+}
+
+
+
+/* ^-^ ----------------------------------------- ^-^ */
+/*------------ CSS for navigation -------------------*/
+.shows{
+	float: right;
+	display: inline-block;
+}
+.hidden
+{
+	visibility: hidden;
+}
+.area-bar
+{
+	background-color: #03a9f4;
+	height: 148px;
+	width: 100%;
+	color: white;
+	position: sticky;
+	z-index: 100;
+	top: 0;
+}
+.bar-top-icon
+{
+	float: left;
+}
+/*CSS for nag mega menu--------------------------*/
+.nav a,
+.nav ul,
+.nav li,
+.nav div
+{
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	border-right: none;
+}
+.nav a
+{
+	text-decoration: none;
+}
+.nav li
+{
+	list-style: none;
+}
+.nav
+{
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	z-index: 500;
+}
+		/* Menu List */
+.nav > li 
+{
+	height: 100%;
+	display: block;
+	float: left;
+}
+.nav > li.home > a > ul > ul
+{
+	position: absolute;
+	top: 0px;
+}
+.nav > li:hover > a { 
+	color: black;
+	background: white;
+	transition: .1s ease;
+	overflow: hidden;
+}
+.nav > li:first-child > a 
+{
+	border-radius: 3px 0 0 3px;
+	border-left: none;
+}
+.nav > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+		/* Menu Content Styles */
+.nav .nav-column {
+	float: left;
+	width: 25%;
+	border-right: 1px solid gray;
+	padding: 2.5%;
+}
+.nav .nav-column h3.orange { color: #ff722b; }
+.nav .nav-column li a:hover { color: #666666;
+	width: 95%;
+	height: 100%;
+	color: #17a2b8;
+	background-color: #f5f5f5; }
+.hassub
+{
+	display: block;
+	position: relative;
+	float: left;
+	line-height: 30px;
+	background-color: #4FA0D8;
+	border-right:#CCC 1px solid;
+}
+
+.hassub:hover > ul 
+{
+	display:block;
+	position: absolute;
+	
+}
+.home > ul >li
+{
+	position: relative;
+}
+.i2:hover > ul
+{
+	position: absolute;
+	top: -100%;
+}
+.i3:hover > ul
+{
+	position: absolute;
+	top:-200%;
+}
+.i4:hover > ul
+{
+	position: absolute;
+	top:-300%;
+}
+.i5:hover > ul
+{
+	position: absolute;
+	top:-400%;
+}
+.i6:hover > ul
+{
+	position: absolute;
+	top:-500%;
+}
+.i7:hover > ul
+{
+	position: absolute;
+	top:-600%;
+}
+.i8:hover > ul
+{
+	position: absolute;
+	top:-700%;
+}
+.i9:hover > ul
+{
+	position: absolute;
+	top: -800%;
+}
+.dropdown 
+{
+	display: none;
+}
+.home >.dropdown >li:hover
+{
+	background-color: #eee;
+}
+.dropdown li .dropdown li.able
+{
+	background-color: #f5f5f5;
+}
+.dropdown li a
+{
+	color: #000000;
+	padding-left: 1%;
+}
+ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0px; 
+	min-width:9em;
+}
+ul ul ul
+{
+	left: 100%;
+	top: 0;
+	margin-left:1px;
+}
+.hrclass
+{
+	border-bottom: 1px solid black;
+}
+
+/*css for item1*/
+/*---- CSS for Article 1 ----*/
+.flex-art-container
+{
+	display: flex;
+	flex-direction: column;
+}
+/*-------CSS for item 1 in article-------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+.item1
+{
+	height: auto;
+	background-image: url("..//img_test/bg_item2.jpg");
+	background-size: cover;
+}
+.item-text
+{
+	color: #47c4fd;
+}
+.flex-item1-bottom-icon
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.item-art-bottom-right
+{
+	width: 50%;
+	height: auto;
+	position: relative;
+}
+
+.flex-item1-bottom-text 
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.img-item1
+{
+	width: 80%;
+	padding-left: 15%;
+	position: relative;
+}
+.img-item1-child
+{
+	position: absolute;
+	top: 11%;
+	left: 19.5%;
+	width: 60%;
+	
+}
+.img-item1-child > img
+{
+	width: 97%;
+	
+}
+.item1-art-last
+{
+	clear: both;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 5%;
+	width: 55%;
+}
+
+.left-art-item1
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	flex-direction: row;
+
+}
+.left-art-item1 > button
+{
+	margin: 0 3%;
+	padding: 0;
+	border:none;
+}
+.mid-art-item1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.mid-art-item1 > button
+{
+	margin: 25% 10%;
+}
+.right-art-item1
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding-left: 2%;
+}
+.right-art-item1 > button
+{
+	margin: 0 1%;
+}
+
+.common
+{
+	opacity: 0.7;
+}
+.common:hover
+{
+	background-color:#ffffff;
+	opacity: 1;
+}
+.btn-group-var
+{
+	opacity: 0.7;
+}
+.common1
+{
+	
+	width: 150px;
+	height: 30px;
+	border: none;
+}
+.btn-personalize
+{
+	background-color: #eb8c00;
+	color: white;
+	
+}
+.btn-personalize:hover
+{
+	background-color: #ffc266;
+}
+.btn-download
+{
+	background-color: #46a149;
+	color: white;
+}
+/*----- CSS for item2 -------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+.item2
+{
+	text-align: center!important;
+}
+.title-item2
+{
+	font-size: 35px;
+	font-weight: bold;
+}
+.title-item2 + p
+{
+	font-size: 1.25rem;
+	padding: 0 23%;
+}
+/*------- CSS for item 3 ----------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+
+.btn-set-item3 > i
+{
+	color: white;
+}
+.bg-item3-1
+{
+	background-color:#00bcd4; 
+}
+.bg-item3-2
+{
+	background-color:#ff9800; 
+}
+.bg-item3-3
+{
+	background-color:#4caf50; 
+}
+.bg-item3-4
+{
+	background-color:#f44336; 
+}
+.item3-child1-content
+{
+	color: #00bcd4;
+}
+.item3-child2-content
+{
+	color: #ff9800;
+}
+.item3-child3-content
+{
+	color: #4caf50;
+}
+.item3-child4-content
+{
+	color: #f44336;
+}
+.item3 > div > h4
+{
+	padding-top: 20px;
+	font-size: 20px;
+}
+.btn-action
+{
+	border:none;
+	color: white;
+	padding: 10px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+/*------ CSS for section 4---------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+.item4
+{
+	background-image: url("..//img_test/bgitem4.jpg");
+	height: auto;
+	opacity: 0.8;
+	padding-bottom: 6%;
+	width: 100%;
+}
+
+/*--------- CSS for item5 -------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item5
+{
+	margin-left: 9%;
+}
+/*------- CSS for item6 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item6
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+.item6 > a:active
+{
+	color: #00bcd4;
+}
+/*------- CSS for item7 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+
+/*-------- CSS for item8 --------*//*---------------------------------*/
+/*-------------------------------*//*---------------------------------*/
+/*-------------------------------*//*---------------------------------*/
+.item8
+{
+	width: 100%;
+	text-align: center;
+}
+.item8-content
+{
+	font-size: 2rem;
+	font-size: 300;
+	color: #757575;
+}
+/*------- CSS for item9 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+hr
+{
+	width: 90%;
+}
+.item9 > div
+{
+	height: auto;
+	width: 30%;
+	margin: 5px 0 0;
+	text-align: center;
+}
+.item9  > div > div > p:nth-child(2)
+{
+	color:white;
+	margin: 0;
+	padding : 2%;
+}
+/*-----------------Header item9-----------------*//*---------------------------------*/
+/*----------------------------------------------*//*---------------------------------*/
+/*----------------------------------------------*//*---------------------------------*/
+.flex-item9
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: left;
+	padding: 0 3%;
+}
+/*------- Hover item9 ----------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+hr
+{
+	width: 90%;
+	margin-right: 25%;
+}
+.flex-item9 > div > i
+{
+	margin-left: 1%;
+}
+/*Hover item 9 ----------------------*/
+.hover1:hover
+{
+	color: white;
+	background-color: #17a2b8;
+}
+.hover1:hover >  div > i
+{
+	color: white;
+	background-color: #17a2b8;
+}
+.hover1:hover > div > button
+{
+	color: #17a2b8;
+	background-color: white;
+}
+.hover2:hover
+{
+	color: white;
+	background-color: #28a745;
+}
+.hover2:hover >  div > i
+{
+	color: white;
+	background-color: #28a745;
+}
+.hover2:hover > div > button
+{
+	color: #28a745;
+	background-color: white;
+}
+.hover3:hover
+{
+	color: white;
+	background-color: #ff9800;
+}
+.hover3:hover >  div > i
+{
+	color: white;
+	background-color: #ff9800;
+}
+.hover3:hover > div > button
+{
+	color: #ff9800;
+	background-color: white;
+}
+/*Hover item 9------------------------------------*/
+.hover3 > div > i
+{
+	color: #ff9800;
+}
+.hover2
+{
+	padding-top: 20px;
+}
+.hover2 > div > i
+{
+	color: #28a745;
+}
+.hover1 > div > i
+{
+	color: #17a2b8;
+}
+/*------span bottom item9 ------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.span-mar
+{
+	clear: both;
+	margin-top:2%;
+	height: 3px;
+}
+.span1
+{
+	background-color: #17a2b8;
+}
+.span2
+{
+	background-color: #28a745;
+}
+.span3
+{
+	background-color: #ff9800;
+}
+/*----------CSS for item 10-------------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+
+.item10
+{
+	background-color: #f44336;
+	height: auto;
+	margin-top: 5%;
+	padding-bottom: 2%;
+}
+
+.item10-row
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+ul.ul-item10
+{
+	margin-left: 5%;
+}
+ul.ul-item10 li
+{
+	float: left;
+	width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: transparent;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    margin:  0 5px;
+}
+/*------ CSS for item11 --------*//*---------------------------------*//*---------------------------------*/
+
+/*------------------------------*//*---------------------------------*//*---------------------------------*/
+.item11
+{
+	height: auto;
+}
+.flex-item11-dot
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-item11-dot > div
+{
+	margin: 5px 0.3%;
+	height: 12px;
+	width: 12px;
+	background-color: white;
+	border:2px solid blue;
+	border-radius: 50%;
+}
+.flex-item11-cnt > div > p
+{
+	text-align: left;
+	padding: 0 2%;
+}
+.flex-item11-cnt > div > button
+{
+	float: right;
+	margin-right: 3%;
+	color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	background-color: #039be0;
+	border:none;
+	padding: 2% 10%;
+}
+.img-item11
+{
+	max-width: 100%;
+	height: auto;
+}
+/*-------- CSS for item12 ---------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+
+.icon-group
+{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+.icon-group > div
+{
+	width: 33.33%;
+}
+.icon-child
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.icon-child > a
+{
+	text-decoration: none;
+	margin:  3% 2%;
+	padding: 0;
+}
+.icon-child  a:hover > i
+{
+	color: orange;
+}
+.icon-child a:hover > span
+{
+	color: orange;
+}
+
+.flex-mid12
+{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-right: 1%;
+}
+.flex-mid12 > div
+{
+	margin: 2.5% 0;
+}
+/*content right flex*/
+.img-item12
+{
+	border-radius: 50%;
+}
+.container-item12
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;	
+}
+.item12-con-right
+{
+	margin-left: 7%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.item12-con-right > div  span.note:hover
+{
+	color: orange;
+}
+.item12-con-right > a:hover
+{
+	color: orange;
+}
+.item12-con-right > span.color-blue
+{
+	color: #03a9f4;
+}
+.item12-con-right > span.color-orange
+{
+	color: #ffb54a;
+	padding-left: 10px;
+}
+.clear
+{
+	clear: both;
+}
+.color-info
+{
+	color:#bdbdbd;
+}
+#item12-right > address > p >span.note:hover
+{
+	color: orange;
+}
+#item12-right > div > a:hover
+{
+	background-color: #3b5998;
+}
+.link-icon-item12
+{
+	width: 100%;
+	height: auto;
+}
+.link-icon-item12 > div
+{
+	float: left;
+	padding: 1%;
+	width: 33.33%;
+}
+.link-icon-item12 > div > i
+{
+	float: left;
+}
+.link-icon-item12 > div > div > a:hover > i
+{
+	color: orange;
+}
+.link-icon-item12 > div > div > a:hover > span
+{
+	color: orange;
+}
+.link-icon-item12 > div > div > a
+{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.btn-set-item12
+{
+	border: none;
+	border-radius: 50px;
+	width: 90%;
+	color: white;
+	padding: 4%;
+	margin: 5% 0;
+	background-color: rgba(0,0,0,.2);
+	font-size: 18px;
+}
+.item12-icon
+{
+	display: flex;
+	flex: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+/*------------FOOTER--------------------------*/
+footer
+{
+	clear: both;
+	background-color: rgb(59, 76, 85);
+	color: gray;
+	text-align: center;
+	padding: 2%;
+}
+/*--------------------  Hover- -----------------*/
+header a:hover
+{
+	text-decoration: underline;
+}
+header > div:nth-child(1):hover
+{
+	opacity: 0.5;
+}
+/*--------------------------------------------------*/
+/*------------------ Class color ------------------*/
+.bg-warning
+{
+	background-color: #ffc107;
+}
+.bg-info
+{
+	background-color: #17a2b8;
+}
+.bg-danger
+{
+	background-color: #dc3545;
+}
+.bg-sucess
+{
+	background-color: #20c997;
+}
+.default
+{
+	color: white;
+}
+.warning
+{
+	color: #ffc107;
+}
+.info
+{
+	color: #17a2b8;
+}
+.danger
+{
+	color: #dc3545;
+}
+.royal
+{
+	color: #6f42c1;
+}
+.success
+{
+	color: #20c997;
+}
+.gray
+{
+	color: #bfbfbf;
+}
+/*------------ Class for text content ----------*/
+
+.txt-left
+{
+	text-align: left;
+}
+.txt-center
+{
+	text-align: center;
+}
+.txt-right
+{
+	text-align: right;
+}
+.bold
+{
+	font-weight: bold;
+}
+/*-------- Create Grid View -------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px; 
+}
+/*--------------- Transition and Animation -------------*/
+.shows:hover i
+{
+	transition: all ease .5s;
+	content: "";
+	transform: scale(1);
+}
+.shows:hover .overlay
+{
+	transform: scale(1);
+}
+.shows
+{
+	position: relative;
+}
+.sumicon:hover ~ .hidden 
+{
+	visibility: visible;
+}
+
+/*----------------- Hidden Hover---------------------*/
+.animated
+{
+	animation-duration: 2s;
+}
+.delay100
+{
+	animation-delay: 10s;
+}
+.delay50
+{
+	animation-delay: 5s;
+}
+.delay30
+{
+	animation-delay: 3s;
+}
+.delay20
+{
+	animation-delay: 2s;
+}
+.delay19
+{
+	animation-delay: 1.9s;
+}
+.delay18
+{
+	animation-delay: 1.8s;
+}
+.delay12
+{
+	animation-delay: 1.2s;
+}
+.delay7
+{
+	animation-delay: .7s;
+}
+.delay9
+{
+	animation-delay: .9s;
+}
+.overlay
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: scale(0);
+  	transition: .5s ease;
+}
+div.hover-zoom-basic
+{
+	overflow: hidden;
+	transition: all .9s ease-in;
+    transform: scale(1);   
+}
+img.hover-zoom-basic
+{
+	transform: scale(1);
+}
+img.img-item10:hover
+{
+	transform: scale(1.1);
+}
+.flex-item11-cnt img.img-item11
+{
+	max-width: 100%;
+	vertical-align: middle;
+}
+.flex-item11-cnt img.img-item11:hover
+{
+	transition: all .1s ease-in;
+	transform: scale(1.5);
+}
+.fadeInBig
+{
+	animation-name: fadeInBig;
+}
+.fadeInLeft
+{
+	animation-name: fadeInLeft;
+}
+.fadeInRight
+{
+	animation-name: fadeInRight;
+}
+.fadeInDown
+{
+	animation-name: fadeInDown;
+}
+.zoomIn
+{
+	animation-name: zoomIn;
+}
+.zoomDown
+{
+	animation-name: zoomDown;
+}
+.zoomFadeIn
+{
+	animation-name: zoomFadeIn;
+}
+.slideInLeft
+{
+	animation-name: slideInLeft;
+}
+.slideInRight
+{
+	animation-name: slideInRight;
+}
+.item3 > div > div:hover .rotate
+{
+	animation-name: rotate360;
+	animation-duration: 1s;
+	animation: rotate360 1s;
+}
+
+.item12-icon > a:hover
+{
+	animation-name: rotate360;
+	animation-duration: 1s;
+	animation: rotate360 1s;
+}
+@keyframes loop
+{
+
+}
+@keyframes rotate360
+{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes zoomIn
+{
+	0% {
+	    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+	    opacity: 0;
+	    transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+	}
+	60% {
+	    animation-timing-function: cubic-bezier(.175,.885,.32,1);
+	    opacity: 1;
+	    transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+	}
+}
+@keyframes zoomDown
+{
+	0%{
+		animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+    	opacity: 0;
+    	transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+    }
+}
+@keyframes zoomFadeIn
+{
+	0% {
+   
+   	 	opacity: 0;
+    	transform: translate3d(100%,0,0);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateZ(0);
+	}
+}
+@keyframes fadeInBig
+{
+	0%{
+    	opacity: 0;
+    	transform: translate3d(0,2000px,0);
+	}
+	100% {
+    	opacity: 1;
+    	transform: translateZ(0);
+	}
+}
+@keyframes fadeInRight
+{
+	0% {
+   		opacity: 0;
+   		transform: translate3d(100%,0,0);
+	}
+	100% {
+	   
+	    opacity: 1;
+	    transform: translateZ(0);
+	}
+}
+@keyframes fadeInLeft
+{
+	0% {
+	    opacity: 0;
+	    transform: translate3d(-100%,0,0);
+	}
+	99.99% {
+	    opacity: 1;
+ 	  	transform: translateZ(0);
+	}
+	100%
+	{
+		opacity: 0;
+	    transform: translate3d(-100%,0,0);
+	}	
+}
+@keyframes fadeInDown
+{
+	0% {
+	    opacity: 0;
+	    transform: translate3d(0,-100%,0);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateZ(0);
+	}
+}
+@keyframes slideInLeft
+{
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+
+@keyframes slideInRight
+{
+	0% {
+	    opacity: 0;
+	    transform: translate3d(-100%,0,0);
+	}
+	100% {
+	    opacity: 1;
+ 	   	transform: translateZ(0);
+	}	
+}

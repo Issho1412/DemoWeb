@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VietLott</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+	<link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+<body >
+	<div class="container">
+		<div class="header">
+			<div class="left-header">
+				<a><i class="fa fa-facebook-f"></i></a>
+				<a><i class="fa fa-google-plus"></i></a>
+				<a><i class="fa fa-youtube-play"></i></a>
+				
+			</div>
+			<div class="right-header">
+				<img src="..//GameJS/img/vietnam.png">
+				<span>| Language</span>
+			</div>
+		</div>
+		<div class="menu-top">
+			<img src="..//GameJS/img/logo.png">
+			<a href="" class="hidden">Home</a>
+			<a href="" class="hidden active">Play <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden">Gift <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden">Shop <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden">Responsible <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden">News <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden">Vietlott <i class="fa fa-arrow-down"></i></a>
+			<a href="" class="hidden-res"><i class="fa fa-tasks"></i></a>
+			<div class="search">
+				<i class="fa fa-search"></i>
+			</div>
+		</div>
+		<div class="How-to-play">
+			<p>
+				How to Play
+			</p>
+		</div>
+		<div class="content">
+			<div>
+				<span class="spn-number text-default"> 1 </span>
+				<span class="cnt-txt">Condition to give gift</span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+			<div>
+				<span class="spn-number text-default"> 2 </span>
+				<span class="cnt-txt">Find shop </span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+			<div>
+				<span class="spn-number text-default"> 3 </span>
+				<span class="cnt-txt">Fill information in ticket</span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+			<div>
+				<span class="spn-number text-default"> 4 </span>
+				<span class="cnt-txt">Take ticket</span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+			<div>
+				<span class="spn-number text-default"> 5 </span>
+				<span class="cnt-txt">See result</span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+			<div>
+				<span class="spn-number text-default"> 6 </span>
+				<span class="cnt-txt">Test game now!</span>
+				<a href=""><i class="fa fa-plus"></i></a>
+			</div>
+		</div>
+
+		
+		<div class="canvas">
+			<div class="ticket">
+				<div class="bsp">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="body-ticket">
+					<div class="number-ticket text-default">A</div>
+					<div class="number-choose">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+						<div>29</div>
+						<div>30</div>
+						<div>31</div>
+						<div>32</div>
+						<div>33</div>
+						<div>34</div>
+						<div>35</div>
+						<div>36</div>
+						<div>37</div>
+						<div>38</div>
+						<div>39</div>
+						<div>40</div>
+						<div>41</div>
+						<div>42</div>
+						<div>43</div>
+						<div>44</div>
+						<div>45</div>
+					</div>
+					<div class="btn-select">
+						<div class="text-default" id="TCA">
+							TC <input type="checkbox" name="TC">
+						</div>
+						<div class="text-default"> 
+							X <input type="checkbox" name="exit">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="ticket">
+				<div class="bsp">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="body-ticket">
+					<div class="number-ticket text-default">B</div>
+					<div class="number-choose">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+						<div>29</div>
+						<div>30</div>
+						<div>31</div>
+						<div>32</div>
+						<div>33</div>
+						<div>34</div>
+						<div>35</div>
+						<div>36</div>
+						<div>37</div>
+						<div>38</div>
+						<div>39</div>
+						<div>40</div>
+						<div>41</div>
+						<div>42</div>
+						<div>43</div>
+						<div>44</div>
+						<div>45</div>
+					</div>
+					<div class="btn-select">
+						<div class="text-default" id="TCB">
+							TC <input type="checkbox" name="TC">
+						</div>
+						<div class="text-default"> 
+							X <input type="checkbox" name="exit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ticket">
+				<div class="bsp">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="body-ticket">
+					<div class="number-ticket text-default">C</div>
+					<div class="number-choose">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+						<div>29</div>
+						<div>30</div>
+						<div>31</div>
+						<div>32</div>
+						<div>33</div>
+						<div>34</div>
+						<div>35</div>
+						<div>36</div>
+						<div>37</div>
+						<div>38</div>
+						<div>39</div>
+						<div>40</div>
+						<div>41</div>
+						<div>42</div>
+						<div>43</div>
+						<div>44</div>
+						<div>45</div>
+					</div>
+					<div class="btn-select">
+						<div class="text-default" id="TCC">
+							TC <input type="checkbox" name="TC">
+						</div>
+						<div class="text-default"> 
+							X <input type="checkbox" name="exit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ticket">
+				<div class="bsp">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="body-ticket">
+					<div class="number-ticket text-default">D</div>
+					<div class="number-choose">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+						<div>29</div>
+						<div>30</div>
+						<div>31</div>
+						<div>32</div>
+						<div>33</div>
+						<div>34</div>
+						<div>35</div>
+						<div>36</div>
+						<div>37</div>
+						<div>38</div>
+						<div>39</div>
+						<div>40</div>
+						<div>41</div>
+						<div>42</div>
+						<div>43</div>
+						<div>44</div>
+						<div>45</div>
+					</div>
+					<div class="btn-select">
+						<div class="text-default" id="TCD">
+							TC <input type="checkbox" name="TC">
+						</div>
+						<div class="text-default"> 
+							X <input type="checkbox" name="exit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ticket">
+				<div class="bsp">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="body-ticket">
+					<div class="number-ticket text-default">E</div>
+					<div class="number-choose">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+						<div>29</div>
+						<div>30</div>
+						<div>31</div>
+						<div>32</div>
+						<div>33</div>
+						<div>34</div>
+						<div>35</div>
+						<div>36</div>
+						<div>37</div>
+						<div>38</div>
+						<div>39</div>
+						<div>40</div>
+						<div>41</div>
+						<div>42</div>
+						<div>43</div>
+						<div>44</div>
+						<div>45</div>
+					</div>
+					<div class="btn-select">
+						<div class="text-default" id="TCE">
+							TC <input type="checkbox" name="TC">
+						</div>
+						<div class="text-default" > 
+							X <input type="checkbox" name="exit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="intro">
+				<p class="title-rule ">
+					Rule Game
+				</p>
+				<p>
+					Cost 0.5$/ticket.
+				</p>
+				<p>
+					Time: 18:00 Wed, Fri, Sun.
+				</p>
+				<div class="result">
+					<p>Result: </p>
+					<p class="resultA">A: </p>
+					<p class="resultB">B: </p>
+					<p class="resultC">C: </p>
+					<p class="resultD">D: </p>
+					<p class="resultE">E: </p>
+				</div>
+				<button>Buy</button>
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+body
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.container
+{
+	max-width: 100%;
+}
+a
+{
+	text-decoration: none;
+}
+/* ------------------------- Css for header ---------------*/
+.header
+ {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+ 	background-color: #333;
+ 	height: 20%;
+ }
+ .header > div.left-header
+ {
+ 	margin: 0.5% 5%;
+ 	display: flex;
+ 	width: 20%;
+ 	flex-direction: row;
+ 	color: white;
+ }
+ .left-header  a
+ {
+ 	margin: 0 1%;
+ }
+ .header > div.right-header
+ {
+ 	width: 70%;
+ 	text-align: right;
+ 	color: white;
+ 	margin: 0.5% 10% 0 0;
+ }
+
+
+ /* ------------------------- Css for menu-top ---------------*/
+ .hidden-res
+ {
+ 	visibility: hidden;
+ }
+ @keyframes shine
+{
+	0% {
+	    transform: translate3d(-100%,0,0);
+	    visibility: visible;
+	}
+	100% {
+	    transform: translateZ(0);
+	}
+}
+ .menu-top
+ {
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: nowrap;
+ 	justify-content: flex-start;
+ }
+ .menu-top > img
+ {	
+ 	margin-top: 1%;
+	margin-left: 5%;
+	margin-right: 5%;
+ }
+ .menu-top > a
+ {
+	margin: 2% 1.5%;
+	transition: 0.4s;
+	font-weight: bold;
+ }
+.menu-top > a:hover
+{
+	color: red;
+	
+}
+a.active
+{
+	color: red;
+}
+ .search
+ {
+ 	margin-top: 1.5%;
+ 	margin-left: 10%;
+ }
+
+ /*---- ------  How to play -------------*/
+
+ .How-to-play
+ {
+ 	background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(15deg, red, white, #ff9999);
+ 	height: 20%;
+ 	color: white;
+ 	margin: 1% 0;
+ 	padding: 1.5% 0;
+ }
+ .How-to-play p
+ {
+ 	font-weight: bold;
+ 	margin-left: 5%;
+	font-size: 2em;
+ }
+ /* ------------------------ Css for Content -----------------------*/
+ .content
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.content > div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 5%;
+	margin-top: 1%;
+	padding: 1% 1% 0.5% 1.5%;
+	border: 1px solid gray;
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	border-radius: 2px;
+	width: 80%;
+}
+.spn-number
+{
+	background-color: #ed1b2f;
+	width: 0.8%;
+	padding: 0.5% 1%;
+	height: 0.8%;
+	text-align: center;
+	border-radius: 10%;
+	font-weight: bold;
+	margin: 0 1% 0 0 ;
+}
+.cnt-txt
+{
+	width: 95%;
+	color: #001452;
+	font-weight: bold;
+	
+	font-size: 1.2rem;
+}
+.content a
+{
+	color: red;
+}
+.text-default
+{
+	color: white;
+	font-weight: bold;
+}
+
+/*------------ Css for canvas ---------------*/
+.canvas
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 5%;
+	padding: 0 2%;
+	width: 80%;
+	
+	border: 1px inset black;
+}
+.canvas > div.ticket
+{
+	width: 15%;
+	margin-left: 1%;
+	margin-bottom: 5%;
+	}
+.bsp
+{
+	display: flex;
+	flex-direction: row;
+	margin: 5% 0;
+	justify-content: center;
+}
+.bsp > span
+{
+
+	height: 15px;
+	width: 7px;
+	padding: 1%;
+	margin: 1% 1%;
+	background-color: black;
+}
+.body-ticket
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 5%;
+	background-color: #ff1a1a;
+}
+.body-ticket > div
+{
+	margin: 0 5%;
+	width: 90%;
+}
+.number-ticket
+{
+	text-align: center;
+}
+.number-choose
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: white;
+}
+.number-choose > div
+{
+	margin: 5% 2%;
+	padding: 0 1%;
+	width: 10%;
+	border: 1px solid red;
+	border-radius: 10%;
+	font-size: 0.7em;
+}
+.btn-select
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.btn-select  input 
+{
+	border: none;
+}
+.intro
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0 2%;
+	font-size: 0.8em;
+}
+.title-rule
+{
+	font-weight: bold;
+	color: red;
+}
+.intro > button
+{
+	background-color: #77ff33;
+	background-image: linear-gradient(180deg, #99e600, #223300);
+	border-radius: 15%;
+	padding: 5% 10%;
+	width: 50%;
+	color: white;
+	font-weight: bold;
+	box-shadow: 5px 5px 5px grey;
+	border:none;
+}

@@ -1,0 +1,1349 @@
+
+* {
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/*-------- CSS for Header ----------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+header
+{
+	height: 40px;
+	background-color: #000000;
+}
+.content-header
+{
+	margin: 0;
+}
+.img-title
+{
+	float: left;
+	margin-left: 150px;
+	margin-top: 5px;
+}
+.ctn-header-title
+{
+	color: #cccccc;
+	margin-left: 50px;
+	text-decoration: none;
+	margin-right: 100px;
+}
+
+/*------ CSS for Navbar Area-------*/ /*---------------------------------*/
+.flex-bar-top-rights{
+	float: right;
+	width: 550px;
+	height: 60px;
+	margin-top: -55px;
+}
+.shows{
+	float: right;
+	display: inline-block;
+}
+.hidden
+{
+	visibility: hidden;
+}
+.shows i{
+	width: 60px; 
+	height: 60px;
+	text-align: center;
+/*	border:1px solid black;*/
+	line-height: 60px;
+	border-radius: 50%;
+}
+.flex-bar-top-rights .shows:hover  i{
+	background-color: white;
+	color: #03a9f4;
+}
+/*---------------------------------*//*---------------------------------*/
+.area-bar
+{
+	
+	background-color: #03a9f4;
+	height: 150px;
+	width: 100%;
+	color: white;
+	position: sticky;
+	z-index: 100;
+	top: 0;
+}
+.area-bar-top
+{
+	position: absolute;
+	left: 100px;
+	top: 20px;
+	height: 50px;
+	width: 90%;
+}
+.bar-top-icon
+{
+	float: left;
+	height: 50px;
+}
+.bar-top-content
+{
+	font-size: 40px;
+}
+.flex-bar-top-left
+{
+	float: left;
+	width: 70%;
+}
+
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+.flex-bar-top-right
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.flex-bar-top-right > div
+{
+	line-height: 10px;
+	font-size: 20px;
+	margin: 10px;
+
+}
+.flex-bar-top-right > div:hover
+{
+	text-align: center;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background-color: White;
+	color: blue;
+}
+.show{
+	visibility: hidden;
+}
+
+
+
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*--------------DropDownMenu--------------*//*---------------------------------*/
+.menu-wrapper
+{
+	font-family: Arial;
+	font-size: 15px;
+	position: absolute;
+	top:94px;
+	left: 70px;
+	
+}
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input
+{
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+.nav a
+{
+	text-decoration: none;
+}
+.nav li
+{
+	list-style: none;
+}
+.nav
+{
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	z-index: 500;
+}
+
+		/* Menu List */
+.nav > li 
+{
+	display: block;
+	float: left;
+}
+.nav > li > a 
+{
+	position: relative;
+	display: block;
+ 	z-index: 510;
+	height: 54px;
+	padding: 0 20px;
+ 	line-height: 54px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fcfcfc;
+	text-shadow: 0 0 1px rgba(0,0,0,.35);
+	background: #03a9f4;
+}
+.nav > li.home > a > ul > ul
+{
+	position: absolute;
+	top: 0px;
+}
+.nav > li:hover > a { 
+	color: black;
+	background: white; 
+}
+
+.nav > li:first-child > a 
+{
+	border-radius: 3px 0 0 3px;
+	border-left: none;
+}
+
+		/* Search Form */
+.nav > li > div 
+{
+	position: absolute;
+	display: block;
+	width: 1000px;
+	top: 50px;
+	left: 0;
+ 	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	background: #ffffff;
+	border-radius: 0 0 3px 3px;
+}
+.nav > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+
+		/* Menu Content Styles */
+.nav .nav-column {
+	float: left;
+	width: 25%;
+	border-right: 1px solid gray;
+	padding: 2.5%;
+}
+
+.nav .nav-column h3 {
+	margin: 20px 0 10px 0;
+	line-height: 18px;
+			
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav .nav-column h3.orange { color: #ff722b; }
+
+.nav .nav-column li a {
+	display: block;
+	line-height: 30px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+
+	color: #888888;
+}
+
+.nav .nav-column li a:hover { color: #666666;
+	width: 95%;
+	height: 100%;
+	color: #17a2b8;
+	background-color: #f5f5f5; }
+.hassub
+{
+	display: block;
+	position: relative;
+	float: left;
+	line-height: 30px;
+	background-color: #4FA0D8;
+	border-right:#CCC 1px solid;
+}
+.hassub a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.hassub:hover > ul 
+{
+	display:block;
+	position: absolute;
+	
+}
+
+.home > ul >li
+{
+	position: relative;
+}
+
+.i2:hover > ul
+{
+	position: absolute;
+	top:-50px;
+}
+.i2:hover > ul li:last-child
+{
+	padding-bottom: 150px;
+}
+.i3:hover > ul
+{
+	position: absolute;
+	top:-100px;
+}
+.i3:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i4:hover > ul
+{
+	position: absolute;
+	top:-150px;
+}
+.i4:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i5:hover > ul
+{
+	position: absolute;
+	top:-200px;
+}
+.i5:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i6:hover > ul
+{
+	position: absolute;
+	top:-250px;
+}
+.i6:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i7:hover > ul
+{
+	position: absolute;
+	top:-300px;
+}
+.i7:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i8:hover > ul
+{
+	position: absolute;
+	top:-350px;
+}
+.i8:hover > ul li:last-child
+{
+	padding-bottom: 250px;
+}
+.i9:hover > ul
+{
+	position: absolute;
+	top:-400px;
+}
+.i9:hover > ul li:last-child
+{
+	padding-bottom: 300px;
+}
+.dropdown 
+{
+	display: none;
+}
+.dropdown li 
+{
+	background-color: white;
+	line-height: 50px;
+	width: 230px;
+	padding: 0 0 0 5px;
+}
+
+.home >.dropdown >li:hover
+{
+	background-color: #eee;
+}
+.dropdown li .dropdown li.able
+{
+	background-color: #f5f5f5;
+
+}
+
+
+.dropdown li a
+{
+	color: #000000;
+	padding-left: 10px;
+}
+ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0px; 
+	min-width:10em;
+}
+ul ul ul
+{
+	left: 100%;
+	top: 0;
+	margin-left:1px;
+}
+.hrclass
+{
+	border-bottom: 1px solid black;
+}
+
+/*---- CSS for Article 1 ----*/
+.flex-art-container
+{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+/*-------CSS for item 1 in article-------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+.item1
+{
+	height: auto;
+	background-image: url("..//Training_WTS/img_test/bg_item2.jpg");
+	background-size: cover;
+}
+.transbox
+{
+	margin: 30px 0;
+  	background-color: rgba(0,0,0,.4);
+  	border: 1px solid black;
+  	opacity: 0.6;
+  	height: 100px;
+  	padding-right: 30px;
+  	text-align: right;
+  	width: 50%;
+}
+.transbox p
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 25px;
+  	color: white;
+}
+.item-text
+{
+	color: #47c4fd;
+}
+
+.btn-gear-fix
+{
+	position: absolute;
+	right: 10%;
+	top: 35%;
+}
+.btn-gear
+{
+	border-radius: 50%;
+	background-color: #03a9f4;
+	position: fixed;
+	z-index: 100;
+}
+.flex-item1-bottom-icon
+{
+	display: flex;
+	flex-direction: column;
+}
+.flex-item1-bottom-icon > div
+{
+	margin: 15px 50px;
+	width: 60px;
+	height: 60px;
+  	padding: 15px;
+ 	font-size: 25px;
+ 	border-radius: 50%;
+ 	text-align: center;
+}
+.item1-art-bottom
+{
+	width: 100%;
+}
+.item1-art-bottom-left
+{
+	float: left;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+.flex-item1-bottom-text 
+{
+
+	display: flex;
+	flex-direction: column;
+}
+.flex-item1-bottom-text > div
+{
+	margin-bottom: 5;
+	color: white;
+	height: 50px
+	flex-wrap:wrap;
+	font-size: 20px;
+	font-weight: bold;
+}
+.item-art-bottom-right
+{
+	float: left;
+	width: 50%;
+}
+.img-item1
+{
+	width: 80%;
+	padding-left: 150px;
+	
+}
+.img-item1-child
+{
+	position: absolute;
+	left: 824px;
+	width: 29%;
+}
+.item1-art-last
+{
+	display: inline-block;
+	margin-left: 50px;
+}
+.item1-art-last > button
+{
+	margin: 0 10px 30px;
+
+}
+.common
+{
+	border-radius: 50%;
+	opacity: 0.7;
+}
+.common:hover
+{
+	background-color:#ffffff;
+	opacity: 1;
+}
+.btn-group-var
+{
+	opacity: 0.7;
+}
+.common1
+{
+	
+	width: 150px;
+	height: 30px;
+	border: none;
+}
+.btn-personalize
+{
+	background-color: #eb8c00;
+	color: white;
+	
+}
+.btn-personalize:hover
+{
+	background-color: #ffc266;
+
+}
+.btn-download
+{
+	background-color: #46a149;
+	color: white;
+}
+/*----- CSS for item2 -------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+.item2
+{
+	text-align: center!important;
+}
+
+
+.title-item2
+{
+	font-size: 35px;
+	font-weight: bold;
+}
+.title-item2 + p
+{
+	font-size: 1.25rem;
+	padding: 0 23%;
+}
+
+/*------- CSS for item 3 ----------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+.item3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 50px 0;
+}
+.item3 > div
+{
+	height: 330px;
+	width: 19%;
+	margin: 5px;
+  	text-align: center;
+  	line-height: 25px;
+  	flex-wrap: wrap;
+  	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.btn-item3-icon
+{
+	margin-left: 90px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	padding-top: 25px;
+	margin-bottom: 5px;
+}
+.btn-set-item3
+{
+	height:70px; 
+	width: 70px;
+	border-radius: 50%; 
+	border:none;
+}
+.btn-set-item3 > i
+{
+	color: white;
+}
+.bg-item3-1
+{
+	background-color:#00bcd4; 
+}
+.bg-item3-2
+{
+	background-color:#ff9800; 
+}
+.bg-item3-3
+{
+	background-color:#4caf50; 
+}
+.bg-item3-4
+{
+	background-color:#f44336; 
+}
+.item3-child1-content
+{
+	color: #00bcd4;
+}
+.item3-child2-content
+{
+	color: #ff9800;
+}
+.item3-child3-content
+{
+	color: #4caf50;
+}
+.item3-child4-content
+{
+	color: #f44336;
+}
+.item3 > div > h4
+{
+	padding-top: 20px;
+	font-size: 20px;
+}
+.btn-action
+{
+	border:none;
+	color: white;
+	padding: 10px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+/*------ CSS for section 4---------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+.item4
+{
+	background-image: url("..//Training_WTS/img_test/bgitem4.jpg");
+	height: auto;
+	opacity: 0.8;
+	padding-bottom: 60px;
+	width: 100%;
+}
+.title-item4
+{
+	color: white;
+	text-align: center;
+	font-size: 30px;	
+}
+.item4-container
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.item4-cnt-left
+{
+	float: left;
+	width: 50%;
+	padding-left: 100px;
+	color: white;
+	font-size: 18px;
+}
+.group-btn-item4
+{
+	text-align: center;
+}
+.item-cnt-right
+{
+	float: left;
+	width: 50%;
+	position: relative;
+}
+.img-item4
+{
+	position: absolute;
+	right: 100px;
+}
+/*--------- CSS for item5 -------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item5
+{
+	margin-left: 90px;
+}
+.title-item5
+{
+	font-size: 34px;
+}
+/*------- CSS for item6 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item6
+{
+	display: flex;
+
+	flex-direction: row;
+	justify-content: center;
+}
+.item6 > a
+{
+	text-decoration: none;
+	padding-top: 15px;
+	text-align: center;
+	width: 17%;
+	height: 50px;
+	color: gray;
+	line-height: 10px;
+	font-size: 20px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.item6 > a:active
+{
+	color: #00bcd4;
+}
+/*------- CSS for item7 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item7
+{
+	margin-top: 25px;
+}
+.img-item7
+{
+	width: 30%;
+	margin-left: 80px;
+}
+/*-------- CSS for item8 --------*//*---------------------------------*/
+/*-------------------------------*//*---------------------------------*/
+/*-------------------------------*//*---------------------------------*/
+.item8
+{
+	width: 100%;
+	text-align: center;
+}
+.item8-content
+{
+	font-size: 2rem;
+	font-size: 300;
+	color: #757575;
+}
+/*------- CSS for item9 --------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.item9
+{
+	
+	width: 90%;
+	margin: 0 0 0 10%;
+	display: flex;
+	align-items: baseline;
+	flex-direction: row;
+	}
+.item9 > div
+{
+	height: auto;
+	width: 30%;
+	margin: 5px 0 0;
+	text-align: center;
+}
+.item9  p
+{
+	color:white;
+	margin: 0;
+}
+.header-item9
+{
+	height: 50px;
+	opacity: 0.5;
+	padding: 10px 0;
+	font-size: 25px;
+	background-color: rgba(0,0,0,.4);
+}
+.cnt-header-item9
+{
+	font-size: 40px;
+	font-weight: bold;
+
+}
+/*-----------------Header item9-----------------*//*---------------------------------*/
+/*----------------------------------------------*//*---------------------------------*/
+/*----------------------------------------------*//*---------------------------------*/
+.item9-dolar
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+.flex-item9
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	
+	
+}
+/*------- Hover item9 ----------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.flex-item9 > div
+{
+	text-align: left;
+	padding: 0 20px;
+	margin: 10px 0px 0px;
+}
+
+.flex-item9 > div > span
+{
+	padding-left: 10px;
+}
+
+hr
+{
+	width: 90%;
+}
+.flex-item9-cnt
+{
+	font-size: 20px;
+	padding: 0;
+}
+.flex-item9-cnt > button
+{
+	text-align: center;
+}
+/*Hover item 9 ----------------------*/
+.hover1:hover
+{
+	color: white;
+	background-color: #17a2b8;
+}
+.hover1:hover >  div > i
+{
+	color: white;
+	background-color: #17a2b8;
+}
+.hover1:hover > div > button
+{
+	color: #17a2b8;
+	background-color: white;
+}
+
+
+.hover2:hover
+{
+	color: white;
+	background-color: #28a745;
+}
+.hover2:hover >  div > i
+{
+	color: white;
+	background-color: #28a745;
+}
+.hover2:hover > div > button
+{
+	color: #28a745;
+	background-color: white;
+}
+
+
+.hover3:hover
+{
+	color: white;
+	background-color: #ff9800;
+}
+.hover3:hover >  div > i
+{
+	color: white;
+	background-color: #ff9800;
+}
+.hover3:hover > div > button
+{
+	color: #ff9800;
+	background-color: white;
+}
+/*Hover item 9------------------------------------*/
+.btn-item9
+{
+	margin-left: 110px;
+	border:none;
+	padding: 5px 15px;
+}
+
+.hover3 > div > i
+{
+	color: #ff9800;
+}
+.hover2
+{
+	padding-top: 20px;
+}
+.hover2 > div > i
+{
+	color: #28a745;
+}
+.hover1 > div > i
+{
+	color: #17a2b8;
+}
+/*------span bottom item9 ------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+/*------------------------------*//*---------------------------------*/
+.span-mar
+{
+	margin-top:20px;
+	height: 3px;
+}
+.span1
+{
+	background-color: #17a2b8;
+}
+.span2
+{
+	background-color: #28a745;
+
+}
+.span3
+{
+	background-color: #ff9800;
+}
+/*----------CSS for item 10-------------*//*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*//*---------------------------------*/
+
+.item10
+{
+	background-color: #f44336;
+	height: auto;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+.flex-item10
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-item10 > div
+{
+	width: 27%;
+	height: auto;
+	background-color: white;
+	margin: 2%;
+	color: gray;
+	position: relative;
+	padding-left: 50px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.content-item10
+{
+	
+	text-align: left;
+	font-size: 20px;
+	word-wrap: break-word;
+	font-style: italic;
+}
+.img-item10
+{
+	position: absolute;
+	left: -40px;
+	top: -30px;
+	height: 90px;
+	width: 90px;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+	border-radius: 50%;
+}
+.content-item10-bottom
+{
+	float: right;
+	padding-bottom: 20px;
+}
+.item10-row
+{
+
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.item10-row > div.row-left10
+{
+	float: left;
+	line-height: 50px;
+	padding-top: 0.4%;
+	width: 5%;
+	text-align: center;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 16%;
+	margin-right: 16%;
+}
+.item10-row > div.row-md10
+{
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-left: 6%;
+
+}
+.item10-row > div.row-right10
+{
+	float: right;
+	line-height: 50px;
+	padding-top: 0.4%;
+	width: 5%;
+	text-align: center;
+	background-color: white;
+	border-radius: 50%;
+		margin-right: 16%;
+}
+
+
+ul.ul-item10
+{
+	margin-left: 20px;
+}
+ul.ul-item10 li
+{
+	float: left;
+	width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: transparent;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    margin:  0 5px;
+}
+/*------ CSS for item11 --------*//*---------------------------------*//*---------------------------------*/
+
+/*------------------------------*//*---------------------------------*//*---------------------------------*/
+.item11
+{
+	text-align: center;
+	height: auto;
+}
+.flex-item11-dot
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-item11-dot > div
+{
+	margin: 5px 0.3%;
+	
+	height: 12px;
+	width: 12px;
+	background-color: white;
+	border:2px solid blue;
+	border-radius: 50%;
+}
+.flex-item11-cnt
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-item11-cnt > div
+{
+	height: 30%;
+	width: 25%;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	margin: 0.1% 0.9%;
+	padding-bottom: 3%;
+}
+.flex-item11-cnt > div > p
+{
+	text-align: left;
+	padding-left: 2%;
+}
+.flex-item11-cnt > div > button
+{
+	float: right;
+	margin-right: 3%;
+	color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	background-color: #039be0;
+	border:none;
+	padding: 2% 10%;
+}
+.img-item11
+{
+	max-width: 100%;
+	height: auto;
+}
+.title-item11
+{
+	font-size: 24px;
+	text-align: center;
+}
+/*-------- CSS for item12 ---------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+/*---------------------------------*//*---------------------------------*/
+
+.item12
+{
+	width: 100%;
+	margin-top: 5%;
+}
+#item12-left
+{
+	float: left;
+	width: 35%;
+	padding-left: 8%;
+	background-color: rgb(96, 125, 139);
+}
+#item12-mid
+{
+	float: left;
+	width: 35%;
+	height: 100%;
+	background-color: #343a40;
+	padding-bottom: 64px;
+}
+#item12-right
+{
+	float: right;
+	height: 100%;
+	width: 30%;
+	background-color: rgb(96, 125, 139);
+}
+.item12 > div
+{	
+	text-align: left;
+  	color: white;
+  	padding-left: 20px;
+  	
+}
+.flex-mid12
+{
+	display: flex;
+	flex-direction:column;
+}
+/*content right flex*/
+.img-item12
+{
+	border-radius: 50%;
+}
+.container-item12
+{
+	width: 100%;
+	margin-top: 5%;
+}
+.item12-con-left
+{
+	float: left;
+	width: 20%;
+}
+.item12-con-right
+{
+	float: left;
+	width: 80%;
+}
+.item12-con-right > span.note:hover
+{
+	color: orange;
+}
+.item12-con-right > span
+{
+	font-size: 13px;
+}
+.item12-con-right > a:hover
+{
+	color: orange;
+}
+.item12-con-right > span.color-blue
+{
+	color: #03a9f4;
+}
+.item12-con-right > span.color-orange
+{
+	color: #ffb54a;
+	padding-left: 10px;
+}
+.clear
+{
+	clear: both;
+}
+
+.color-info
+{
+	color:#bdbdbd;
+}
+.title-left-item12
+{
+	text-align: left;
+	font-size: 24px;
+}
+.title-right-item12
+{
+	text-align: right;
+	font-size: 24px;
+}
+#item12-right
+{
+	text-align: right;
+	padding-right: 10%;
+}
+#item12-right > div
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 15%;
+}
+#item12-right > div > a
+{
+	background-color: #455a64;
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+}
+#item12-right > address > p >span.note:hover
+{
+	color: orange;
+}
+#item12-right > div > a:hover
+{
+	background-color: #3b5998;
+}
+.link-icon-item12
+{
+	
+	width: 100%;
+	height: 127px;
+}
+.link-icon-item12 > div
+{
+	float: left;
+	padding: 10px;
+	width: 33.33%;
+}
+.link-icon-item12 > div > i
+{
+	float: left;
+}
+
+.link-icon-item12 > div > div > a:hover > i
+{
+	color: orange;
+}
+.link-icon-item12 > div > div > a:hover > span
+{
+	color: orange;
+}
+.link-icon-item12 > div > div > a
+{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.btn-set-item12
+{
+	border: none;
+	border-radius: 50px;
+	width: 90%;
+	color: white;
+	padding: 1rem;
+	margin: 9px 0;
+	background-color: rgba(0,0,0,.2);
+	font-size: 18px;
+}
+/*------- CSS for footer ----------*/
+/*---------------------------------*/
+footer
+{
+	clear: both;
+	background-color: rgb(59, 76, 85);
+	color: gray;
+	text-align: center;
+	padding: 2%;
+}
+/*-----------COLOR-----------------*/
+.default
+{
+	color: white;
+}
+.warning
+{
+	color: #ffc107;
+}
+.info
+{
+	color: #17a2b8;
+}
+.danger
+{
+	color: #dc3545;
+}
+.royal
+{
+	color: #6f42c1;
+}
+.success
+{
+	color: #20c997;
+}
+.nallow
+{
+	cursor: not-allowed;
+	color: #bdbdbd;
+	background-color: red;
+	
+}
+span.number
+{
+	
+	color: black;
+	margin-right: 5px;
+	text-align: center;
+	background-color: green;
+	
+	right: 10px;
+	
+	
+}
