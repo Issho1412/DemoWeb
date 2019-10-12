@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		$(".a").attr("target","_blank");
+		// $("a") means select anchor tag, with the help of attr function, we open in a new tab
+		
+
+		$(".b").removeAttr("href");
+		// we select anchor tag ,and removedAttr function remove html attributes inside it
+
+
+		$(".c").attr({ src:"https://ak6.picdn.net/shutterstock/videos/34897336/thumb/1.jpg", alt:"spring"});
+		// we select image and change image with attr function
+	});
+</script>
+
+<style type="text/css">
+	img{
+		margin: 20px;
+		width: 200px;
+		height: 200px;
+	}
+</style>
+</head>
+<body>
+	<a href="https://ak8.picdn.net/shutterstock/videos/1019547568/thumb/1.jpg" class="a">
+		<img src="https://ak8.picdn.net/shutterstock/videos/1019547568/thumb/1.jpg" alt="image">
+	</a>
+
+
+	<a href="https://ak7.picdn.net/shutterstock/videos/1023423877/thumb/1.jpg" class="b">
+		<img src="https://ak7.picdn.net/shutterstock/videos/1023423877/thumb/1.jpg" alt="image">
+	</a>
+	
+	<a href="https://i.stack.imgur.com/xfn1X.jpg" >
+		<img src="https://i.stack.imgur.com/xfn1X.jpg" alt="image" class="c">
+	</a>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var myBoolean = new Boolean(1);
+	console.log(myBoolean);
+
+	var pi_value = Math.PI;
+	console.log('pi_value');
+
+	var squareRoot = Math.sqrt(2);
+	console.log(squareRoot);
+
+	var roundValue = Math.round(4.12);
+	console.log(roundValue);
+
+	var random = Math.random();
+	console.log(random);
+
+	var minimum = Math.min(2, 9);
+	console.log(minimum);
+
+	var maximum = Math.max(2, 9);
+	console.log(maximum);
+
+
+	var str = "Dang Van Nam Van";
+	var part1 = /van/i;
+	document.write(str.match(part1));
+
+
+	document.write("<br>");
+
+	var str2 = "Dang Van Nam Van";
+	var part2 = /Van/g; //is array
+	document.write(str2.match(part2));
+
+	document.write("<br>");
+	document.write("<br>");
+
+	var searchKeyword = new RegExp("Duy");
+	document.write(searchKeyword.test("Nguyen Hung Duy"));
+
+	document.write("<br>");
+	document.write("<br>");
+	
+	var searchKeyword = new RegExp("harsh");
+	document.write(searchKeyword.test("Nguyen Hung Duy"));
+	document.write("<br>");
+</script>
+</body>
+</html>

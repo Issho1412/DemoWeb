@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condition practice</title>
+</head>
+<body onload="alert(b)">
+	<input type="button" name="" value="Click me!" onclick="alert(b)">
+
+	<p onmouseover="alert(b)">OK, Good</p>
+</body>
+<script type="text/javascript">
+	var a = 0;
+	function displayNumber () {
+		// body... 
+		a += 2;
+		return a;
+	}
+	var b = displayNumber();
+</script>
+
+
+<script type="text/javascript">
+	try {
+		// statements
+		plus(3, 2);
+	} catch(error) {
+		// statements
+		alert(error.message);
+		
+	}
+</script>
+</html>

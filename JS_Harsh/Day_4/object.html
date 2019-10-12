@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1.
+		var family = new Object();
+		family.father = "a";
+		family.mother = "b";
+		family.sister = "c";
+
+		document.write(family.father);
+		document.write('<br>My father is ' + family.father);
+
+
+		//-----  Use properties object
+		// 2. 
+		var empty_object = {};
+		empty_object.firstName = 'Le Hong';
+		empty_object.lastName = 'Son';
+		console.log(empty_object);
+		document.write('<br>' + empty_object.firstName + empty_object.lastName);
+		// 3. 
+		var people = {
+			firstName:'Akai',
+			hairColor: 'Brown'
+		}
+
+		console.log(people);
+
+
+
+		//--------------------  Nested Object -----------------
+
+		var flight = {
+			airline: 'VN Airline',
+			number: 323,
+			departure:{
+				time: '10 AM',
+				city: 'Mumbai'
+			},
+			arrival:{
+				time: "11 AM",
+				city: 'HCMC'
+			}
+		}
+
+		console.log(flight.arrival.time);
+
+		// use variable assignment JS object (it works as a reference)
+		var x = flight;
+		console.log(x); // x has value of flight.
+
+		//Note: if value of x changes => value of flight changes.
+		x.color = 'black';
+		console.log(x);
+		console.log(flight); // It is effected when x change property.
+	</script>
+</body>
+</html>

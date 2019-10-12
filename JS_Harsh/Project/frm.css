@@ -1,0 +1,22 @@
+form{
+	background-color: white;
+	border:2px inset gray;
+	border-radius: 10%;
+	margin: 25% 0;
+	padding: 10%;
+}
+.fs-12
+{
+	font-size: 1.5em;
+}
+.input{
+	padding: 2.5%;
+}
+
+.text-purple
+{
+	padding: 2.5%;
+	color: #FFFFFF;
+	background: #232323;
+	text-shadow: 0 0 10px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}

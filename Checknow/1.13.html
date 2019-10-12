@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+		#home
+		{
+			width: 50%;
+		}
+		form
+		{
+			width: 90%;
+			background-color: #ffeb99;
+		}
+		.content
+		{
+			float: left;
+			width: 100px;
+			height: 33px;
+			font-weight: bold;
+			padding-top: 10px;
+			color: #006600;
+		}
+		.content1
+		{
+			float: left;
+			width: 100px;
+			height: 25px;
+			font-weight: bold;
+			padding-top: 10px;
+			color: #006600;
+		}
+		.table
+		{
+			clear: both;
+			height: 41px;		
+			border-bottom: 1px solid black;
+		}
+		.table1
+		{
+			clear: both;
+			height: 40px;
+			border-bottom: 1px solid black;
+		}
+		.input
+		{
+			float: left;
+			border-left: 1px solid black;
+			height: 35px;
+			width: 350px;
+		}
+		.pro
+		{
+			height: 40px;
+		}
+		.pro, .pro1
+		{
+			float: left;
+			border-left: 1px solid black;
+		}
+		.pro1
+		{
+			height: 41px;
+
+		}
+		#table
+		{
+			height: 60px;
+		}
+		#pro1
+		{
+			margin-left: 30px;
+			margin-right: 30px;
+
+		}
+		button
+		{
+			text-align: center;
+			margin-right: 50px;
+		}
+		#button
+		{
+			background-color: #ffeb99;
+			width: 90%;
+			border: 1px solid black;
+			border-top: 0px;
+		}
+		#hide
+		{
+			border: 1px solid black;
+			border-top: 0px;
+			width: 90%;
+			color: red;
+			background-color: #ffeb99;
+		}
+		input[type=checkbox]
+		{
+			height: 30px;
+			width: 40px;
+			margin: 2px;
+		}
+		#quatity
+		{
+			border-bottom:1px solid black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id = "home" style="border:1px solid black">
+			<h1> Go Traveling --^-^-- </h1>
+			<form style="border:1px solid black; border-bottom: 0px">
+				<div class = "table">
+					<div class = "content"> Full Name </div>
+					<input type="text" name="name" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Address </div>
+					<input type="text" name="address" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Phone </div>
+					<input type="text" name="phone" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Is Vietnamese </div>
+					<div class="pro1">
+						<input type="checkbox" name="vetifi">	
+					</div>
+					
+				</div>
+				<div class = "table">
+					<div class = "content"> Choice Tour </div>
+					<select name="major" size="1" class="pro1">
+					    <option value="leviathan"> Leviathan </option>
+					    <option value="paris"> Paris </option>
+					    <option value="tokyo"> Tokyo </option>
+					    <option value="hawai"> Hawaii </option>
+				  	</select>
+				</div>
+				<div class = "table">
+					<div class = "content"> Vehicle </div>
+					<div class="pro1">
+						<input type="radio" name="vehicle">Bus
+						<input type="radio" name="vehicle">Motobike
+					</div>	
+				</div>
+				<div id = "quatity">
+					<div id="pro1">
+						<fieldset style="border:1px solid red;">
+							<legend>Quatity</legend>
+							<label>Adult</label><input type="number" name="Quatity">
+							<label>Children</label><input type="number" name="qu">
+						</fieldset>
+					</div>	
+				</div>
+				<div class = "table1">
+					<div class = "content1"> Notes </div>
+					<select name="notes" size="2" multiple class ="pro">
+					    <option value="child"> There are 2 child (< 6age) </option>
+					    <option value="vegetable"> There are 2 one who eat vegetable </option>
+				  	</select>
+				</div>
+				<div id = "table">
+					<div class = "content"> Guesser </div>
+					<input type="text" name="guesser" class="input">
+				</div>
+				
+			</form>
+			<div id = "button"><button onclick="showData()"> Agree </button></div>
+			<div id = "hide" style="display: none;"></div>
+			<br>
+		</div>
+		
+	</center>
+</body>
+<script type="text/javascript">
+	function showData()
+	{
+		
+		document.getElementById('hide').innerHTML = "Successfully";
+		document.getElementById('hide').style.display = "block";
+	}
+</script>
+</html>

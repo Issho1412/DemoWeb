@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		$("p").css("border", "3px solid red");
+		$(".a").css("border", "1px solid blue");
+		$("#list1").css("border", "5px solid yellow");
+		$("p.b").css("border", "3px solid red");
+	});
+</script>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">Hello 1</li>
+		<li>Hello 2</li>
+		<li>Hello 3</li>
+		<li>Hello 4</li>
+	</ul>
+
+	<p>Hello</p>
+
+	<p class="b">Hy Everyone</p>
+
+
+</body>
+</html>

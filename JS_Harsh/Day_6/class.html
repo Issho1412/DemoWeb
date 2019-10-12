@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Person (name, surname, age) {
+			// body... 
+			this.name = name;
+			this.surname = surname;
+			this.age = age;
+		}
+		Person.prototype.getFullName = function () {
+			/* body... */
+			return this.name + " " + this.surname;
+		}
+
+		Person.older = function(person1, person2)
+		{
+			return (person1.age >= person2.age) ? person1 : person2;
+		};
+
+		const Son = new Person('Son', 'Minano', 20);
+		console.log(Son.getFullName());
+
+		const Nam = new Person('Buu', 'Turing', 21);
+		console.log(Person.older(Son, Nam));
+	</script>
+</body>
+</html>

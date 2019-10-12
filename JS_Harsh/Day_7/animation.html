@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animating an Element</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		
+		//select list1 and alert its html content
+		$("#right").click(function () {
+			$("#theDiv").animate({
+				width: "500px"}, 1000);
+		});
+
+
+		$("#text").click(function () {
+			$("#theDiv").animate({
+				fontSize:"24pt"}, 1000);
+		});
+
+		$("#toggle").click(function () {
+			$("#theDiv").animate({
+				left:"500"}, 1000, "swing");
+		});
+
+
+	});
+	</script>
+	<style type="text/css">
+		div#theDiv
+		{
+			position: relative;
+			width: 200px;
+			height: 189px;
+			margin: 10px;
+			padding: 10px;
+			background-color: cyan;
+			border: 2px solid black;
+		}
+		p,span
+		{
+			font-size: 16pt;
+		}
+		button
+		{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="theDiv">
+		<p>Heloo</p>
+	</div>
+
+	<button id="right">Right</button>
+	<button id="text">Text</button>
+	<button id="toggle">Toggle</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Radius</label><br>
+		<input type="text" name="radius" id = "values"><br>
+		<label>Volume</label><br>
+		<input type="text" name="" id = "Volume">
+		<br>
+
+	</form>
+	<button onclick="Check()">Calculate</button>
+
+</body>
+<script type="text/javascript">
+	function Check()
+	{
+		var x = document.getElementById('values').value;
+
+		if (isNaN(x) || x < 0)
+		{
+			document.getElementById('Volume').innerHTML = "Error!";
+		}
+		else
+		{
+			var result = (4 * x * x * x * 3.14)/3
+			document.getElementById('Volume').value = result;
+		}
+	}
+</script>
+</html>

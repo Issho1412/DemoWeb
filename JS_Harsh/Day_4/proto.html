@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function student (id, name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	var makeUp = new student(111, 'Vu Hoang Nu Trinh');
+	makeUp.hair = 'black';
+	console.log(makeUp);
+
+	var buuBu = new student(212, 'Ngguyen Hoang Buu');
+	buuBu.hair = 'brown';
+	console.log(buuBu);
+
+	student.prototype.latop = 'Dell';
+
+
+	//typeof to show type of data
+	var x = 2;
+	var y = "Hello";
+	console.log('Type of data x: ' + typeof(x));
+	console.log('Type of data y: ' + typeof(y));
+	console.log('Type of data makeUp: ' + typeof(makeUp));
+
+	// delete property of object
+	delete makeUp.hair;
+	delete buuBu.name;
+
+	document.write('<br>');
+	document.write('<br>');
+
+
+	for (all in makeUp){
+		document.write("Key is: " + all + ' & Value is: ' + makeUp[all]);
+		document.write('<br>');
+	}
+
+	var mobile = "Apple";
+	var ishu = 'Wood';
+	// 3 variable created above rather than creating multiple variable best practise is create object
+	var myThings = {
+		mobile : 'Apple',
+		ishu : 'Gold'
+	}
+</script>
+</body>
+</html>

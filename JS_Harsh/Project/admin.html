@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<link rel="icon" href="https://i.pinimg.com/236x/80/35/df/8035dffd0f3cbcd1688f73ac4a1e7e73.jpg" type="image/icon type">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="..//Project/procss/frm.css">
+</head>
+<body>
+	<div class="container-fluid" style="background-image: url('..//Project/Bg/bg11.jpg');">
+		<nav class="navbar navbar-inverse">
+		  	<div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">Home Shark</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Manage User</a></li>
+			      <li><a href="#">Group Chat</a></li>
+			      <li><a href="#">Log Out</a></li>
+			    </ul>
+		  	</div>
+		</nav>
+
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<table class="table table-bordered" style="background-color:white">
+				  	<thead>
+					    <tr>
+					      	<th scope="col"><h3><strong>Name</strong></h3></th>
+					      	<th scope="col"><h3><strong>User Email</strong></h3></th>
+					      	<th scope="col"></th>
+					      	<th scope="col" class=" text-center">
+								
+					      	</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+					   
+					      	<script type="text/javascript">
+								var x, n;
+								function setId (id) {
+									document.getElementById('id_admin').value = id;
+									document.getElementById('email_admin').value = localStorage.getItem('kemail' + id);
+									document.getElementById('pass_admin').value = localStorage.getItem('kpass' + id);
+ 
+								}
+								for( n = 0; n <= localStorage.getItem('id'); n++)
+								{
+									if(localStorage.getItem('kname'+n)!=null || localStorage.getItem('kemail'+n) != null)
+									{
+										document.write('<tr class="table-active">' + '</tr>');
+										document.write('<td>'+ n + ". "+ localStorage.getItem('kname'+n) + '</td>');
+										document.write('<td>'+ n + ". " + localStorage.getItem('kemail'+n) + '</td>');
+										document.write('<td class="text-center">' + '<a class="btn btn-success" href="" onclick="setId('+n+')" data-id="'+n+'"data-toggle="modal" data-target="#modalEditForm"><strong>Edit</strong> </a>'+ '</td>');
+										document.write('<td class="text-center">' + '<a class="btn btn-danger" onclick="deleteUser('+n+')"><strong>Delete</strong></a>'+ '</td>');
+
+									}
+									
+										
+
+								}
+					      	</script>
+					   			    
+				  	</tbody>
+				</table> 
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+		<h1 class="text-purple text-center"><strong>Group 2</strong></h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<h1><strong>About us</strong></h1>
+				<div class="text-light">
+					<strong>
+						<p class="fs-12">GitHub: </p>
+						<p class="fs-12">Phone: </p>
+						<p class="fs-12">Gmail: </p>
+					</strong>
+					
+				</div>
+			</div>
+			<div class="col-sm-4 ">
+				<h1><strong>Member</strong></h1>
+				<div  class="text-light">
+					<strong>
+						<p class="fs-12">1. Do Kim Dang Khoa</p>
+						<p class="fs-12">2. Dang Trung Duc(Leader)</p>
+						<p class="fs-12">3. Nguyen Thanh Tu</p>
+					</strong>
+					
+				</div>		
+			</div>
+			<div class="col-sm-4 ">
+				<h1><strong>Member</strong></h1>
+				<div class="text-light">
+					<strong>
+						<p class="fs-12">4. Ngo Quoc Duy</p>
+						<p class="fs-12">5. Ho Anh Tuan</p>
+						<p class="fs-12">6. Huynh Quang Huy</p>
+					</strong>
+					
+				</div>	
+			</div>
+		</div>
+	</footer>
+
+	
+	<div class="container-fluid modal fade" id="modalEditForm" tabindex="-1" role="dialog" >
+		 
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<form method="POST" id="frmEdit" onsubmit="editData()">
+					<h1 class="text-center text-purple"><strong>Edit Form</strong></h1>
+					<legend class="text-center text-primary">
+						<strong>
+							<i class="fa fa-star"></i> Welcome
+							<i class="fa fa-star"></i>
+						</strong>
+					</legend>
+					<div class="form-group d-flex flex-row">
+						<strong class="fs-12 text-left">
+							<label><i class="fa fa-envelope"> </i> Id: </label>
+						</strong>
+						<input type="text" class="form-control" id="id_admin" readonly>
+						
+					</div>
+					<div class="form-group d-flex flex-row">
+						<strong class="fs-12 text-left">
+							<label><i class="fa fa-envelope"> </i> Email: </label>
+						</strong>
+						<input type="email" class="form-control" id="email_admin" placeholder="Please, fill your email" required>
+						<div id="error_e" style="display: none; color: red;"></div>
+					</div>
+					
+					<div class="form-group">
+						<strong class="fs-12">
+							<label><i class="fa fa-key"></i> Password: </label>
+						</strong>
+						<input type="password" class="form-control" id="pass_admin" placeholder="Please, fill your password" onkeyup="checkpass()" required="" >
+						<div id="error_p" style="display: none; color: red;"></div>
+					</div>
+					<div class="text-center">
+						<button class="btn btn-success text-center" type="submit" onclick="setDataAdmin()">
+							<strong>Edit</strong>
+						</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i> Close</button>
+              		 </div>
+					</div>
+					
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="..//Project/projs/validate.js">	</script>
+<script type="text/javascript" src="..//Project/projs/resolve_data.js"></script>
+</html>

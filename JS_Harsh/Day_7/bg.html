@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		$(function () {
+			/* body... */
+			$("div").one("click", function () {
+				$(this).css({
+					background : "red",
+					cursor: "auto"
+				});
+			});
+		});
+	});
+</script>
+<style type="text/css">
+	div
+	{
+		width: 70px;
+		height: 70px;
+		margin: 10px;
+		float: left;
+		background-color: blue;
+		border: 1px solid black;
+	}
+	p{
+		font-size: 18pt;
+	}
+</style>
+</head>
+<body>
+	<p>Click on each square to change color</p>
+	<div>
+		
+	</div>
+	<div>
+		
+	</div>
+	<div>
+		
+	</div>
+
+</body>
+</html>

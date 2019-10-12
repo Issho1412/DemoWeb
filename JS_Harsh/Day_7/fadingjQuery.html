@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animating an Element</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		
+		//select list1 and alert its html content
+		$("#fadeIn").click(function () {
+			$("#theDiv").fadeIn("normal");
+		});
+
+
+		$("#fadeOut").click(function () {
+			$("#theDiv").fadeOut("normal");
+		});
+
+
+		$("#fadeTo").click(function () {
+			$("#theDiv").fadeTo("slow", 0.5);
+		});
+
+		$("#fadeUp").click(function () {
+			$("#theDiv").fadeTo("slow", 1.0);
+		});
+
+
+
+	});
+	</script>
+	<style type="text/css">
+		div#theDiv
+		{
+			
+			width: 200px;
+			height: 189px;
+			margin: 10px;
+			padding: 10px;
+			background-color: cyan;
+			border: 2px solid black;
+		}
+		p,span
+		{
+			font-size: 16pt;
+		}
+		button
+		{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="theDiv">
+		
+	</div>
+
+	<button id="fadeIn">FadeIn</button>
+	<button id="fadeOut">FadeOut</button>
+	<button id="fadeTo">FadeTo</button>
+	<button id="fadeUp">FadeUp</button>
+	
+</body>
+</html>

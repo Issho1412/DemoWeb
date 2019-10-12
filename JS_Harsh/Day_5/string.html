@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// two option to create String variable
+	var name = " Kuzan Kira ";
+	var fleet = new String("Akain sakazuki");
+	document.write(name + '<br>');
+	console.log(fleet);
+	// To remove the space from string
+
+	document.write(name.length + '<br>');
+	var newName = name.trim();
+	document.write('<br>' + newName.length);
+
+	// function convert string in to array
+	document.write('<br>');
+	var college = "F P T Univeristy ";
+	var newfpt = college.split("");
+	document.write('<br>' + newfpt[0] + "  "+ newfpt);
+
+
+	document.write('<br>');
+	document.write('<br>');
+	var friends = ["a", "b", "c"];
+	var newfriends = friends.join(" ");
+	document.write(newfriends);
+
+
+	document.write('<br>');
+	document.write('<br>');
+	var myName = 'Sarutobi Asuma';
+	var myFirst = myName.substr(0, 8);
+	document.write(myFirst);
+
+
+	document.write('<br>');
+	document.write('<br>');
+	var oStringObject = 'yellow';
+	alert(oStringObject.localeCompare('yellow'));
+
+	document.write('<br>');
+	document.write('<br>');
+	var fullName = 'Nguyen Van Cong';
+	var nfullName = fullName.replace('Cong', 'Hawk');
+	document.write(nfullName);
+
+	document.write("<br>");
+	document.write('<br>');
+	var message = 'I love Vietnam and I love my Country';
+	var find = message.indexOf('I');
+	document.write(find);
+
+	document.write("<br>");
+	document.write('<br>');
+	document.write(message.lastIndexOf('I'));
+	
+	document.write("<br>");
+	document.write('<br>');
+	var schoolName = "Collge Vien Dong";
+	document.write(schoolName.toUpperCase());
+
+	document.write("<br>");
+	document.write('<br>');
+	
+	document.write(schoolName.toLowerCase());
+
+</script>
+</body>
+</html>

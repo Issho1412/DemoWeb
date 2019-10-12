@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var x = prompt("Enter a number between 0 to 10");
+	try {
+		if(x > 10)
+		{
+			throw "Err1";
+		}
+		else if (x < 0)
+			{
+				throw "Err2";
+			}
+			else if (isNaN(x))
+				{
+					throw "Err3";
+				}
+	} catch(e) {
+		// statements
+		switch (e) {
+			case "Err1":
+				alert('Error! This number is too high.');
+				break;
+			case "Err2":
+				alert('Error! This number is too low.');
+				break;
+			case "Err3":
+				alert("Error! This number isn't a number.");
+				break;
+			default:
+				// statements_def
+				break;
+		}
+	}
+</script>
+</body>
+</html>

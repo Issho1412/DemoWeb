@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function displayName()
+	{
+		document.write('Nguyen Van Cong');
+	}
+	displayName();
+
+	document.write("<br>");
+	document.write("<br>");
+
+	function plus (a, b) {
+		return a + b;
+	}
+
+	var x = plus(4,5);
+	document.write('Sum of a, b: ' + x);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	var myObject = {
+		value : 0,
+		increment: function ()
+		{
+			this.value += typeof inc === 'number' ? inc : 1;
+		}
+	}
+
+	myObject.increment();
+	document.write(myObject.value);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	myObject.increment(2);
+	document.write(myObject.value);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	myObject.double = function()
+	{
+		var that = this;
+		var helper = function(){
+			that.value = plus(that.value, that.value);
+		};
+		helper();
+	}
+
+	myObject.double();
+	document.write(myObject.value);
+	document.write("<br>");
+	document.write("<br>");
+
+
+	var buBu = function(string)
+	{
+		this.status = string;
+
+	}
+
+	buBu.prototype.getstatus = function ()
+	{
+		return this.status;
+	}
+	var mybuBu = new buBu('MakeUp');
+	document.write(mybuBu.getstatus());
+
+
+	//------------------------------------------//
+
+	function pluss (a, b,c) {
+		return a + b+c;
+	}
+	document.write('<br>');
+	document.write('<br>');
+	var numbers = [1,2,9];
+	var addition = pluss.apply(null, numbers);
+	document.write(addition);
+	document.write('<br>');
+	document.write('<br>');
+
+	function theFunction (name, profession) {
+		document.write('My name is: ' + name + ' and I have ' + profession + 'in Vien Dong College');
+	}
+	document.write('<br>');
+	document.write('<br>');
+
+	theFunction('buu','4 girlfriends');
+	document.write('<br>');
+	theFunction.apply(undefined, ['Le Hong Son', '1 girlfriend']);
+
+	document.write('<br>');
+	document.write('<br>');
+
+	theFunction.apply(undefined, ['Kizarru', '0 noone']);
+
+
+	document.write("<br>");
+	document.write("<br>");	
+	//Hanoi Towner
+
+	var sum = function () {
+		var i, sum = 0;
+		for(i = 0; i < arguments.length; i++){
+			sum += arguments[i];
+
+		}
+		return sum;
+		/* body... */
+	}
+	document.write(sum(2, 4, 9, 1, 12));
+	document.write("<br>");
+	document.write("<br>");	
+
+	// Recursive function call itself
+	var hanoi = function (disc, src, aux, dst) {
+		/* body... */
+		if(disc > 0)
+		{
+			hanoi(disc-1, src, dst, aux);
+			document.write("<br>");
+			document.write('Move disc ' + disc + ' from ' + src + " to " + dst);
+			hanoi(disc-1, aux, src, dst);
+		}
+	};
+	hanoi(3, 'Src', 'Aux', 'Dst');
+</script>
+</body>
+</html>

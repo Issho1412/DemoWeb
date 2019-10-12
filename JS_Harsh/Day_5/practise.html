@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Revision String Method JS</h1>
+</body>
+<script type="text/javascript">
+	// length 
+	var name = "Kiminari Panchi ";
+	document.write("Your's name: " + name + "& length of name: " + name.length);
+	document.write('<br>');
+	document.write('<br>');
+	var x = name.trim();
+
+	document.write('String is trimmed: ' + x.length);
+	document.write('<br>');
+	document.write('<br>');
+
+	// UpperCase & LowerCase
+	document.write("This is uppercase of name : " + name.toUpperCase());
+	document.write('<br>');
+	document.write("This is lowercase of name : " + name.toLowerCase());
+
+	// indexOf & LastIndexOf
+	document.write('<br>');
+	document.write('<br>');
+	var message = "So I think that conclusion in here can be made as follows: if you only need to replace spaces ' ', use split/join. If there can be different symbols of symbol class";
+	document.write('<br>');
+	document.write("Length of message: " + message.length);
+	document.write('<br>');
+	document.write("Position of I first: " + message.indexOf('I'));
+	document.write('<br>');
+	document.write("Position of I last: " + message.lastIndexOf('I'));
+
+
+	//join & split
+	document.write('<br>');
+	document.write('<br>');
+	var highSchool = "Nguyen Huu Cau high School";
+	var newhSchool = highSchool.split("");
+	document.write(newhSchool);
+
+	document.write('<br>');
+	document.write('<br>');
+	var friends = ["a", "b", "c"];
+	var newfriends = friends.join(" ");
+	document.write("Convert array with value a, b, c: "newfriends);
+</script>
+</html>

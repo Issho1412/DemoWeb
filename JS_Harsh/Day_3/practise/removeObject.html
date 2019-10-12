@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function phoneset (color, size) {
+		this.color = color;
+		this.size = size;
+	}
+
+	var ofMe = new phoneset('red', '700x250');
+	ofMe.camera = 2;
+	console.log(ofMe);
+
+	delete ofMe.color;
+	console.log(ofMe);
+
+</script>
+</body>
+</html>

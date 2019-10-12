@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	
+	var foo = function () {
+		var a = 3;
+		b = 5;
+		var bar =function () {
+			/* body... */
+			var b = 7, c =11;
+			a += b + c;
+
+		};
+		bar();
+		console.log(a);
+		console.log(b);
+
+		/* body... */
+	}
+
+	function employee(id, name)
+	{
+		this.id = id;
+		this.name = name;
+	}
+
+	var buu = new employee('111', 'Buuu');
+	console.log(buu);
+
+	window.WhoAmI = "I'm the window object";
+	alert(window.WhoAmI);
+
+	this.WhoAmI = "Bubuuuuiui";
+	alert(this.WhoAmI);
+</script>
+</html>

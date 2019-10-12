@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animating an Element</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(function ()
+		{
+			$('#theList tr:even').addClass("stripe1");
+			$('#theList tr:odd').addClass("stripe2");
+
+			$("#theList tr").hover(
+				function () {
+					$(this).toggleClass('highlight');
+				},
+
+				function () {
+					$(this).toggleClass('highlight');
+				}
+				
+			)
+			
+		});
+	</script>
+	<style type="text/css">
+		th, td{
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			color: black;
+		}
+		tr
+		{
+			border : 1px solid gray;
+		}
+		td{
+			width: 200px;
+			padding: 5px;
+		}
+		th
+		{
+			background-color: cyan;
+			color: black;
+		}
+
+		table{
+			border: 1pt solid gray;
+		}
+		.clickable
+		{
+			cursor: pointer;
+		}
+		.stripe1
+		{
+			background-color: red;
+		}
+		.stripe2
+		{
+			background-color: blue;
+		}
+		.highlight{
+			background-color: yellow;
+			font-weight: 200;
+		}
+	</style>
+</head>
+<body>
+	
+	<table id="theList">
+		<thead>
+			<tr>
+				<th>Item</th>
+				<th>Price</th>
+			</tr>
+		
+		</thead>
+		<tbody>
+			
+			<tr>
+				<td>Milk</td>
+				<td>1.99</td>
+			</tr>
+			<tr>
+				<td>Egg</td>
+				<td>0.99</td>
+			</tr>
+			<tr>
+				<td>Bread</td>
+				<td>2.99</td>
+			</tr>
+			<tr>
+				<td>Soda</td>
+				<td>9.9</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

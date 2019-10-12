@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table for Google</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*
+		{
+			font-weight: bold;
+			padding: 0;
+			margin: 0;
+		}
+		.container 
+		{
+			width: 100%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.box{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.box > div.one
+		{
+			width: 20%;
+		}
+		.box > div.container
+		{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		/*------  Css for .box   ------*/
+
+		.container > div.first
+		{
+			margin: 10% 0 2.5%;
+		}
+		.container > div.contain
+		{
+			position: relative;
+			width: 100%;
+		}
+		.contain > input {
+			padding: 1% 15%;
+			font-size: 2.5em;
+			border: 1px solid gray;
+			border-radius: 15em;
+		}
+		.first{
+			margin-top: 5%;
+		}
+		/*------  Css for .container   ------*/
+		.icon, .icon2, .icon3
+		{
+			position: absolute;
+			font-weight: bold;
+			font-size: 2em;
+			padding-top: 2%;	
+			z-index: 1;
+		}
+		.icon
+		{
+			left: 5%;
+		}
+		.icon2
+		{
+			right:5%;
+		}
+		.icon3
+		{
+			right:10%;
+		}
+		/*-------  Css for .contain  -------*/
+		.button {
+			width: 100%;
+			margin-top: 5%;
+		}
+		.button > button{
+			padding: 2%;
+			margin: 0 2.5%;
+			background-color: #f1f1f1;
+			border: 1px solid #f2f2f2;
+			border-radius: 5%;
+		}
+		/*-------  Css for .button  -------*/
+		.text-warning
+		{
+			color: #ff0000;
+		}
+		.text-danger
+		{
+			color: #ffcc00;
+		}
+		.text-success
+		{
+			color: #00b300;
+		}
+		.text-info
+		{
+			color: #007acc;
+		}
+		.text-big
+		{
+			font-size: 10em;
+		}
+		.text-normal
+		{
+			font-size: 7em;
+		}
+		.text{
+			margin-top: 5%;
+			font-size: 1.2em;
+		}
+		/*-------  Css format text  -------*/
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		
+	</div>
+	<center>
+		<div class="box">
+			<div class="one"></div>
+
+			<div class="container">
+				<div class="child first">
+					<span class="text-info text-big">G</span>
+					<span class="text-warning text-normal">o</span>
+					<span class="text-danger text-normal">o</span>
+					<span class="text-info text-normal">g</span>
+					<span class="text-success text-normal">l</span>
+					<span class="text-warning text-normal">e</span>
+				</div>
+				
+					
+				<div class="child contain">
+					<span class="icon"><i class="fa fa-search"></i></span>
+			   	  	<input type="search" id="search" placeholder="Search..." />
+			   	  	<span class="icon2"><i class="fa fa-microphone"></i></span>
+		  	 	  	<span class="icon3"><i class="fa fa-keyboard-o"></i></span>
+				</div>
+				<div class="child button">
+					<button>Search with google</button>
+					<button>See first page is found out</button>
+				</div>
+				<div class="child text">
+					<p>Google có các thứ tiếng: 
+						<a href=""> English </a>
+						<a href=""> Français </a>
+						<a href=""> 中文 </a>
+					</p>
+				</div>
+			</div>
+
+			<div class="one"></div>
+			
+					
+			
+		</div>
+				
+	</center>
+</body>
+</html>

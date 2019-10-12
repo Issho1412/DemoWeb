@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animating an Element</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		
+		
+		
+		function rotateImages()
+		{
+			var oCurPhoto = $('#photoShow div.current');
+			var nxtPhoto = oCurPhoto.next();
+			if(nxtPhoto.length == 0)
+			{
+				nxtPhoto = $('#photoShow div:first');
+			}
+
+			oCurPhoto.removeClass('current').addClass('previous');
+			nxtPhoto.css({opacity: 0.0},1000).addClass('current').animate({opacity:1.0}, 1000, 
+				function () {
+					oCurPhoto.removeClass('previous');
+				});
+			setTimeout(rotateImages, 1000);
+		}
+	
+			rotateImages();
+	</script>
+	<style type="text/css">
+		#photoShow
+		{
+			height: 400px;
+			width: 400px;
+		}
+		#photoShow div{
+			position: absolute;
+			z-index: 0;
+		}
+
+		#photoShow div.previous{
+			z-index: 1;
+		}
+		#photoShow div.current{
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="photoShow">
+		
+		<div class="current">
+			<img src="..//Project/Bg/bg1.jpg" class="gallery" width="400px" height="400px">
+		</div>
+
+		<div >
+			<img src="..//Project/Bg/bg2.jpg" class="gallery" width="400px" height="400px">
+		</div>
+
+		<div >
+			<img src="..//Project/Bg/bg3.jpg" class="gallery" width="400px" height="400px">
+		</div>
+
+		<div >
+			<img src="..//Project/Bg/bg4.jpg" class="gallery" width="400px" height="400px">
+		</div>
+	</div>
+
+	
+</body>
+</html>

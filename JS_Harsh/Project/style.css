@@ -1,0 +1,31 @@
+		
+		*
+		{
+			font-weight: bold;
+		}
+		.container
+		{
+			background-image: url('..//Project/Bg/bg0.jpg');
+		}
+		.row{
+			margin-top: 15%;
+		}
+		.text-purple
+		{
+			color: #FFFFFF;
+			background: #232323;
+			text-shadow: 0 0 10px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+		}
+		.fs-18{
+			font-size: 3em;
+		}
+		
+		a.btn
+		{
+			padding: 2.5% 10%;
+		}
+		.frm
+		{
+			border: 5px inset gray;
+			padding: 2.5%;
+		}

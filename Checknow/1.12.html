@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+		#home
+		{
+			width: 50%;
+		}
+		form
+		{
+			width: 90%;
+			background-color: #ccffcc;
+		}
+		.content
+		{
+			float: left;
+			width: 100px;
+			height: 33px;
+			font-weight: bold;
+			padding-top: 10px;
+			color: #006600;
+		}
+		.content1
+		{
+			float: left;
+			width: 100px;
+			height: 32px;
+			font-weight: bold;
+			padding-top: 25px;
+			color: #006600;
+		}
+		.table
+		{
+			clear: both;
+			height: 41px;		
+			border-bottom: 1px solid black;
+		}
+		.table1
+		{
+			clear: both;
+			height: 70px;
+			border-bottom: 1px solid black;
+		}
+		.input
+		{
+			float: left;
+			border-left: 1px solid black;
+			height: 35px;
+			width: 350px;
+		}
+		.pro, .pro1
+		{
+			float: left;
+			border-left: 1px solid black;
+		}
+		.pro1
+		{
+			height: 40px;
+		}
+		button
+		{
+			text-align: center;
+			margin-right: 50px;
+		}
+		#button
+		{
+			background-color: #ccffcc;
+			width: 90%;
+			border: 1px solid black;
+			border-top: 0px;
+		}
+		#hide
+		{
+			border: 1px solid black;
+			border-top: 0px;
+			width: 90%;
+			color: red;
+			background-color: #ccffcc;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div id = "home" style="border:1px solid black">
+			<h1>Sticket buys discount product </h1>
+			<form style="border:1px solid black; border-bottom: 0px">
+				<div class = "table">
+					<div class = "content"> Full Name </div>
+					<input type="text" name="name" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Address </div>
+					<input type="text" name="address" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Phone </div>
+					<input type="text" name="phone" class="input">
+				</div>
+				<div class = "table">
+					<div class = "content"> Gender </div>
+					<div class="pro1">
+						<input type="radio" name="gender">Male
+						<input type="radio" name="gender" >Female
+					</div>
+					
+				</div>
+				<div class = "table">
+					<div class = "content"> Major </div>
+					<select name="major" size="1" class="pro1">
+					    <option value="teacher"> Teacher </option>
+					    <option value="staff"> Staff </option>
+					    <option value="it"> IT </option>
+					    <option value="waiter"> Waiter </option>
+				  	</select>
+				</div>
+				<div class = "table1">
+					<div class = "content1"> Product </div>
+					<select name="product" size="4" multiple class ="pro">
+					    <option value="shampoo"> Shampoo </option>
+					    <option value="powder"> Soap Powder </option>
+					    <option value="gel"> Shower Gel </option>
+					    <option value="toothpaset"> Toothpaste </option>
+				  	</select>
+				</div>
+				<div class = "table">
+					<div class = "content"> Guesser </div>
+					<input type="text" name="guesser" class="input">
+				</div>
+				
+			</form>
+			<div id = "button"><button onclick="showData()"> Agree </button></div>
+			<div id = "hide" style="display: none;"></div>
+			<br>
+		</div>
+		
+	</center>
+</body>
+<script type="text/javascript">
+	function showData()
+	{
+		
+		document.getElementById('hide').innerHTML = "Successfully";
+		document.getElementById('hide').style.display = "block";
+	}
+</script>
+</html>

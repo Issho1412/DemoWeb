@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\obj\Debug\BigInt.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\obj\Debug\BigInt.MainForm.resources
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\obj\Debug\BigInt.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\bin\Debug\BigInt.exe
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\bin\Debug\BigInt.pdb
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\obj\Debug\BigInt.exe
+C:\Users\user\Desktop\Checknow\BigInt\BigInt\obj\Debug\BigInt.pdb

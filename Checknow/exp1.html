@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS DOM pararah style</title>
+</head>
+<body>
+	<p  id = "text">Koori no Mahou</p>
+	<p><a hreflang="en-us" type="text/html" target="_self" href="https://www.w3resource.com" id = "abtr">w3resouce</a></p>
+	<p id = "ex"></p>
+	<form method="post" id ="form1" onsubmit="">
+		FirstName: <input type="text" name="first" id ="fname" ><br>
+		<p id = "demo"></p>
+		LastName: <input type="text" name="last" id ="lname"></input>
+		<p id = "demo1"></p>
+	</form>
+	<button onclick="getabtri()">Change</button>
+	<table id = "sampleTable" border="1">
+		<tr>
+			<td>Row1 Cell </td>
+			<td>Row1 Cell2 </td>
+		</tr>
+		<tr>
+			<td>Row2 Cell1</td>
+			<td>Row2 Cell2</td>
+		</tr>
+	</table>
+	<input type="button" value="insert row" onclick="insertRows();">
+	<br>
+
+	<select id = "Choose" >
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	<button onclick="removeElement()">Run</button>
+</body>
+<script type="text/javascript">
+	
+
+	function getabtri()
+	{
+		var a = document.getElementById('abtr').href;
+		var b = document.getElementById('abtr').hreflang;
+		var c = document.getElementById('abtr').target;
+		var d = "Url is " + a + "| Language is " + b + "|  Transfer page =  " +c;
+		document.getElementById('ex').innerHTML = d;
+	}
+	function change()
+	{
+		document.getElementById('text').style.color = "red";
+		document.getElementById('text').style.fontFamily= "Impact,Charcoal,sans-serif";
+		document.getElementById('text').style.backgroundColor = "cyan";
+	}
+	function getset()
+	{
+		var x = document.getElementById('fname').value;
+		var y = document.getElementById('lname').value;
+		document.getElementById('demo').innerHTML = x + " " +y;
+	
+		//document.getElementById('demo1').innerHTML = ;
+	}
+	function changeContentTable()
+	{
+		rn = window.prompt("Input the Row number(0,1,2)", "0");
+		cn = window.prompt("Input the Column number(0,1)","0");
+		content = window.prompt("Input the Cell content");  
+		var x=document.getElementById('sampleTable').rows[parseInt(rn,10)].cells;
+		x[parseInt(cn,10)].innerHTML=content;
+	}
+	function insertRows()
+	{
+		var table = document.getElementById("sampleTable");
+	    var row = table.insertRow(2);
+	    var cell1 = row.insertCell(0);
+	    var cell2 = row.insertCell(1);
+	    cell1.innerHTML = "New Cell1";
+	    cell2.innerHTML = "New Cell2";
+	}
+	function removeElement()
+	{
+		var x = document.getElementById('Choose');
+		 x.remove(x.selectedIndex);
+	}
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var empty = [];
+	empty [100] = "Ho Anh Tuan";
+	document.write(empty);
+	console.log(empty)
+
+	var numbers = ['Le Hong Son', 23, 25.4, 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+	delete numbers[1];
+	numbers.splice(1,1);
+	document.write('<br>'+ numbers + '<br>');
+
+
+
+	for(all in numbers)
+	{
+		document.write(numbers[all] + "<br>");
+	}
+
+	document.write("<br>");
+	document.write("<br>");
+	dim = function(dimenstion, initial) {
+		// body... 
+		var a = [];
+		var i; 
+		for(i = 0; i < dimenstion; i++)
+		{
+			a[i] = initial;
+		}
+		return a;
+	}
+
+	document.write(dim(5,2));
+	//
+	document.write("<br>");
+	document.write("<br>");
+	var allFriends = [
+		['Le Hong Son', 'Do Pham Gia Bao', 'Makeup'],
+		['Thach Huynh Dung', 'Vo Thanh Duy', 'Nguyen Van Cong'],
+		['Dang Trung Duc', 'Huynh Quang Huy', 'Ho Anh Tuan']
+	];
+	document.write(allFriends[2][0]);
+
+</script>
+</html>

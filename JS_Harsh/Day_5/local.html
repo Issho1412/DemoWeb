@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="result"></div>
+<div id="result1"></div>
+</body>
+
+<script type="text/javascript">
+	if (typeof(Storage) !== "undefined") {
+	  // Store
+	  localStorage.setItem("lastname", "Smith");
+	  // Retrieve
+
+	  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+	  localStorage.setItem('lastname', "dsa");
+	  document.getElementById("result1").innerHTML = localStorage.getItem("lastname");
+	}
+</script>
+</html>

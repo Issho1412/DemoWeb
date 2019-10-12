@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frm 2 Sign up</title>
+	<link rel="stylesheet" type="text/css" href = "frmSignup.css">
+</head>
+<body>
+	<div id = "frmbig">
+		<div id = "contentfrm">
+			<h1>Sign Up Page</h1>
+			<form method="post" action="" name = "myForm" >
+				<input type = "text" name = "user" id = "User" placeholder = "User...." onkeyup="checkuser()">
+				<div id = "user_error" class="val_error" style = "color: red; font-size: 10px; display: none;" ></div>
+
+				<input type = "text" name = "email" id = "Email" placeholder = "Email...." >
+				<div id = "email_error" class="val_error" style = "color: red; font-size: 10px; display: none;"></div>
+
+				<input type = "password" name = "password" id = "Password" placeholder = "Password..." onkeyup="checkpass()">
+				<div id = "pass_error" class="val_error" style = "color: red; font-size: 10px; display: none;"></div>
+
+				<input type = "password" name = "repassword" id = "Repassword" placeholder = "Re-password...">
+				<div id = "re_error" class="val_error" style = "color: red; font-size: 10px; display: none;"></div>
+
+				<input type = "text" name = "phone" id = "Phone" placeholder = "Phone....." onkeyup="checkphone()">
+				<div id = "phone_error" class="val_error" style = "color: red; font-size: 10px; display: none;"></div>
+
+				<input type = "date" name = "date" id = "Date" value = "2014-02-09" min="2000-01-01" max="2018-12-31">
+				<div id = "date_error" class="val_error"style = "color: red; font-size: 10px; display: none;"></div>
+
+				<input type = "submit" name = "submit" value = "Sign-up">
+			</form>	
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	
+	function checkemail()
+	{
+		var email = document.getElementById('Email').value;
+		if(email.length == 0)
+		{
+			document.getElementById('email_error').style.display = "block";
+			document.getElementById('email_error').innerHTML = "Please fill out email!";
+
+		}
+		else 
+			document.getElementById('email_error').style.display = "none";
+		var x  = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//$ and ^ = match end and start of string 
+		//\w + match 1 or > 1 char
+		if(email.match(x))
+		{
+			document.getElementById('email_error').style.display = "none";
+		}
+		else
+		{	document.getElementById('email_error').style.display = "block";
+			document.getElementById('email_error').innerHTML = "Please input a valid email!";
+		}
+	}
+	
+	
+		
+	
+	//===================
+	function checkuser()
+	{
+		var user = document.getElementById('User').value;
+		if(user.length == 0)
+		{
+			document.getElementById('user_error').style.display = "block";
+			document.getElementById('user_error').innerHTML = "Please fill out user!";
+
+		}
+		else 
+			document.getElementById('user_error').style.display = "none";
+		if (!isNaN(user.slice(0,1)))
+		{
+			document.getElementById('user_error').style.display = "block";
+			document.getElementById('user_error').innerHTML = "Please user does not start by number.";
+		}
+		else
+		{
+			document.getElementById('user_error').style.display = "none";
+		}
+	}
+	function checkpass()
+	{
+		var password = document.getElementById('Password').value;
+
+		if (password.length == 0)
+		{
+			document.getElementById('pass_error').style.display = "block";
+			document.getElementById('pass_error').innerHTML = "Please fill out password!";
+		}
+		else 
+			document.getElementById('user_error').style.display = "none";
+		var bind = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+		if (password.match(bind))
+		{
+			document.getElementById('pass_error').style.display = "none";
+		}
+		else
+		{
+			document.getElementById('pass_error').style.display = "block";
+			document.getElementById('pass_error').innerHTML = "Password include upper, lowercase, number and special and not null characters";
+		}
+		var repass = document.getElementById('Repassword').value;
+		if (repass != password)
+		{
+			document.getElementById('re_error').style.display = "block";
+			document.getElementById('re_error').innerHTML = "Please check repassword!";
+		}
+		else
+			document.getElementById('re_error').style.display = "none";
+	}
+	function checkphone()
+	{
+		var number = document.getElementById('Phone').value;
+		if (isNaN(number) || number.length != 10)
+		{
+			document.getElementById('phone_error').style.display = "block";
+			document.getElementById('phone_error').innerHTML = "Please Input a number with 10 digis.";
+		}
+		else
+			document.getElementById('phone_error').style.display = "none";
+	}
+	
+</script>
+</html>

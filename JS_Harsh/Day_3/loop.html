@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condition practice</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	// 1. for loop
+		document.write("<br><strong>Ex: For loop </strong><br>");
+		document.write("<br><strong>All number from 0 to 10 </strong><br>");
+		for (var i = 0; i <= 10; i++)
+		{
+			document.write(i + "<br>");
+		}
+
+		document.write("<br><br><strong>Ex: While loop.</strong><br>");
+	// 2. while loop
+		var key = 20;
+		document.write('<strong> 0 <  All even number  < 20 :  </strong>');
+		while(key > 0)
+		{
+			key -= 2;
+			document.write(" " + key + "  ");
+		}
+
+		document.write("<br><br><strong>Ex: Do while loop.</strong> <br>");
+	// 3. do while loop
+		var j = 2;
+		var a = 1;
+		document.write('<strong> Multile Board 2  </strong>');
+		do
+		{
+			var c = j * a;
+			document.write('n * ' + a + ' = ' + c + '<br>');
+			a++;
+		}while(a <= 10);
+
+		document.write("<br><br><strong>Ex: For in loop.</strong> <br>");
+	// 4. for in loop
+		var lst = ["Kuzan", "Kizaru", "Garp"];
+		document.write('<strong> List name of my friend </strong>');
+		for (var x in lst)
+		{
+			document.writeln(lst[x]);
+			document.write("<br>");
+		}
+	
+</script>
+</html>

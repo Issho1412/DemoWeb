@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Person {
+			constructor(name, surname, age)
+			{
+				this.name = name;
+				this.surname = surname;
+				this.age = age;
+			}
+
+			getFullName()
+			{
+				return this.name + "  " + this.surname; 
+			}
+
+			static older(person1, person2)
+			{
+				return (person1.age >= person2.age) ? person1 : person2;
+			}
+		} 
+
+		class childClass extends Person{
+
+		}
+
+		let ChildClassObjects = new childClass('Mainly', 'Jigoku', 23);
+		console.log(ChildClassObjects.getFullName());
+
+
+		const luciano = new Person('Lucario', 'Hawk', 29);
+		console.log(luciano.getFullName());
+
+		const alan = new Person('Harsh', 'Varhan', 30);
+		console.log(Person.older(luciano, alan));
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animating an Element</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(function ()
+		{
+			$('#eveTarget').bind("mouseover mouseleave", highlight);
+
+			$('#eveTarget').bind("click", function (evt) {
+				/* body... */
+				$("#eveTarget").unbind("mouseover mouseleave", highlight);
+				$("#eveTarget").html("<p>You shut off the hover</p>");
+			});
+		});
+			function highlight (evt) {
+				// body... 
+				$('#eveTarget').toggleClass("highlight");
+			}
+		
+	</script>
+	<style type="text/css">
+		.normal{
+			width: 300px;
+			height: 250px;
+			background-color: yellow;
+			font-size: 18pt;
+		}
+		.highlight{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>Binding</h1>
+	<div id="eveTarget" class="normal">
+		Mouse it will be effect
+	</div>
+	
+</body>
+</html>

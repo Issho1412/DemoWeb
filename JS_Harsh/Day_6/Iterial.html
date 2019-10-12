@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const x = 4;
+		const y = 5;
+		const obj = {x, y};
+		console.log(obj);
+
+		let namespace = '-webkit-';
+		let style = {
+			[namespace + 'box-sizing']: 'border-box',
+			[namespace + 'box-shadow']: '10px 10px 5px #888888'
+		};
+
+		console.log(style);
+
+		let person = {
+			name:'Buu',
+			surname: 'Luu',
+
+			get FullName(){
+				return this.name + ' ' + this.surname;
+			},
+
+			set FullName(fname)
+			{
+				let parts = fname.split(' ');
+				name = parts[0];
+				surname = parts[1];
+			}
+		}
+
+		console.log(person.fullname);
+		console.log(person.fullname='Le hong');
+		console.log(person.name);
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('document').ready(function () {
+		
+		//select list1 and alert its html content
+		alert($("#list1").html());
+
+		//change the html of the UL
+
+		$("#list2").html("<li>This is a new item</li>"); // select list1 and change li
+
+		var newItem = $("<p>This is a new paragraph</p>");
+		$("#para2").html(newItem.html()); // select para2
+
+		$("p:last").text("This is the last paragraph"); // set text for last paragraph
+	});
+</script>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">Hello 1</li>
+		<li>Hello 2</li>
+		<li>Hello 3</li>
+		<li>Hello 4</li>
+	</ul>
+
+	<ul id="list2">
+		<li class="a">Hello 1</li>
+		<li>Hello 2</li>
+		<li>Hello 3</li>
+		<li>Hello 4</li>
+	</ul>
+	<p>Hello</p>
+
+	<p class="a">Hy Everyone 1</p>
+	<p id = "para2">Hy Everyone 2</p>
+	<p class="a">Hy Everyone 3</p>	
+
+
+
+</body>
+</html>

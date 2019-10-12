@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// test 1 not arrow function
+		var number = [2, 3, 4, 9, 8];
+		var even = number.filter(function (x) {
+			/* body... */
+			return x%2 ===0;
+		});
+		console.log(even);
+
+		// arrow function is function with default return and it is simple 
+		var number = [2, 3, 4, 9, 8];
+		var even = number.filter(x => x%2 ===0);
+		console.log(even);
+
+		// var numbers = [2, 6, 7, 8, 1];
+		var even =number.filter((x)=>{
+			if(x%2 === 0)
+			{
+				console.log(x + ' is event');
+				return true;
+			}
+		});
+
+
+		// 
+		function DelayGreeter (name) {
+			this.name = name;
+		}
+
+		DelayGreeter.prototype.greet = function(){
+			setTimeout((function cb () {
+				console.log('Hello' + this.name);
+			}).bind(this), 5000);
+		};
+
+		var greeter = new DelayGreeter('World');
+		greeter.greet();
+
+
+		function DelayGreeter (name) {
+			this.name = name;
+		}
+
+
+		DelayGreeter.prototype.greet = function(){
+			setTimeout(() => console.log('Hello' + this.name), 500);
+		};
+
+		var greeter = new DelayGreeter('World');
+		greeter.greet();
+	</script>
+</body>
+</html>
